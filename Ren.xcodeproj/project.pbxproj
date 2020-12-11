@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48AE6A6625807E410033FBF1 /* RenTabBarItemConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */; };
+		48CBF2A625806FF800612080 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2A525806FF800612080 /* AppDelegate.m */; };
+		48CBF2AC25806FF800612080 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2AB25806FF800612080 /* ViewController.m */; };
+		48CBF2AF25806FF800612080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CBF2AD25806FF800612080 /* Main.storyboard */; };
+		48CBF2B125806FF900612080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CBF2B025806FF900612080 /* Assets.xcassets */; };
+		48CBF2B425806FF900612080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CBF2B225806FF900612080 /* LaunchScreen.storyboard */; };
+		48CBF2B725806FF900612080 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2B625806FF900612080 /* main.m */; };
+		48CBF2C125806FF900612080 /* RenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2C025806FF900612080 /* RenTests.m */; };
+		48CBF2CC25806FF900612080 /* RenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2CB25806FF900612080 /* RenUITests.m */; };
+		48CBF2E72580717100612080 /* RenTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2E62580717100612080 /* RenTabBarController.m */; };
+		48CBF2EE258074FD00612080 /* RenTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2ED258074FD00612080 /* RenTabBarItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48CBF2BD25806FF900612080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48CBF29925806FF800612080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CBF2A025806FF800612080;
+			remoteInfo = Ren;
+		};
+		48CBF2C825806FF900612080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48CBF29925806FF800612080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CBF2A025806FF800612080;
+			remoteInfo = Ren;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
+		48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTabBarItemConfig.m; sourceTree = "<group>"; };
+		48CBF2A125806FF800612080 /* Ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CBF2A425806FF800612080 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48CBF2A525806FF800612080 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		48CBF2AA25806FF800612080 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		48CBF2AB25806FF800612080 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48CBF2AE25806FF800612080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48CBF2B025806FF900612080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48CBF2B325806FF900612080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48CBF2B525806FF900612080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CBF2B625806FF900612080 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48CBF2BC25806FF900612080 /* RenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CBF2C025806FF900612080 /* RenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTests.m; sourceTree = "<group>"; };
+		48CBF2C225806FF900612080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CBF2C725806FF900612080 /* RenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CBF2CB25806FF900612080 /* RenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenUITests.m; sourceTree = "<group>"; };
+		48CBF2CD25806FF900612080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CBF2E52580717100612080 /* RenTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarController.h; sourceTree = "<group>"; };
+		48CBF2E62580717100612080 /* RenTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTabBarController.m; sourceTree = "<group>"; };
+		48CBF2EC258074FD00612080 /* RenTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItem.h; sourceTree = "<group>"; };
+		48CBF2ED258074FD00612080 /* RenTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTabBarItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48CBF29E25806FF800612080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CBF2B925806FF900612080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CBF2C425806FF900612080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48CBF29825806FF800612080 = {
+			isa = PBXGroup;
+			children = (
+				48CBF2A325806FF800612080 /* Ren */,
+				48CBF2BF25806FF900612080 /* RenTests */,
+				48CBF2CA25806FF900612080 /* RenUITests */,
+				48CBF2A225806FF800612080 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48CBF2A225806FF800612080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48CBF2A125806FF800612080 /* Ren.app */,
+				48CBF2BC25806FF900612080 /* RenTests.xctest */,
+				48CBF2C725806FF900612080 /* RenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48CBF2A325806FF800612080 /* Ren */ = {
+			isa = PBXGroup;
+			children = (
+				48CBF2EB258074D900612080 /* TabBar */,
+				48CBF2A425806FF800612080 /* AppDelegate.h */,
+				48CBF2A525806FF800612080 /* AppDelegate.m */,
+				48CBF2AA25806FF800612080 /* ViewController.h */,
+				48CBF2AB25806FF800612080 /* ViewController.m */,
+				48CBF2AD25806FF800612080 /* Main.storyboard */,
+				48CBF2B025806FF900612080 /* Assets.xcassets */,
+				48CBF2B225806FF900612080 /* LaunchScreen.storyboard */,
+				48CBF2B525806FF900612080 /* Info.plist */,
+				48CBF2B625806FF900612080 /* main.m */,
+			);
+			path = Ren;
+			sourceTree = "<group>";
+		};
+		48CBF2BF25806FF900612080 /* RenTests */ = {
+			isa = PBXGroup;
+			children = (
+				48CBF2C025806FF900612080 /* RenTests.m */,
+				48CBF2C225806FF900612080 /* Info.plist */,
+			);
+			path = RenTests;
+			sourceTree = "<group>";
+		};
+		48CBF2CA25806FF900612080 /* RenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48CBF2CB25806FF900612080 /* RenUITests.m */,
+				48CBF2CD25806FF900612080 /* Info.plist */,
+			);
+			path = RenUITests;
+			sourceTree = "<group>";
+		};
+		48CBF2EB258074D900612080 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				48CBF2E52580717100612080 /* RenTabBarController.h */,
+				48CBF2E62580717100612080 /* RenTabBarController.m */,
+				48CBF2EC258074FD00612080 /* RenTabBarItem.h */,
+				48CBF2ED258074FD00612080 /* RenTabBarItem.m */,
+				48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */,
+				48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48CBF2A025806FF800612080 /* Ren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CBF2D025806FF900612080 /* Build configuration list for PBXNativeTarget "Ren" */;
+			buildPhases = (
+				48CBF29D25806FF800612080 /* Sources */,
+				48CBF29E25806FF800612080 /* Frameworks */,
+				48CBF29F25806FF800612080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ren;
+			productName = Ren;
+			productReference = 48CBF2A125806FF800612080 /* Ren.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48CBF2BB25806FF900612080 /* RenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CBF2D325806FF900612080 /* Build configuration list for PBXNativeTarget "RenTests" */;
+			buildPhases = (
+				48CBF2B825806FF900612080 /* Sources */,
+				48CBF2B925806FF900612080 /* Frameworks */,
+				48CBF2BA25806FF900612080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48CBF2BE25806FF900612080 /* PBXTargetDependency */,
+			);
+			name = RenTests;
+			productName = RenTests;
+			productReference = 48CBF2BC25806FF900612080 /* RenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48CBF2C625806FF900612080 /* RenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CBF2D625806FF900612080 /* Build configuration list for PBXNativeTarget "RenUITests" */;
+			buildPhases = (
+				48CBF2C325806FF900612080 /* Sources */,
+				48CBF2C425806FF900612080 /* Frameworks */,
+				48CBF2C525806FF900612080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48CBF2C925806FF900612080 /* PBXTargetDependency */,
+			);
+			name = RenUITests;
+			productName = RenUITests;
+			productReference = 48CBF2C725806FF900612080 /* RenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48CBF29925806FF800612080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					48CBF2A025806FF800612080 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					48CBF2BB25806FF900612080 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 48CBF2A025806FF800612080;
+					};
+					48CBF2C625806FF900612080 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 48CBF2A025806FF800612080;
+					};
+				};
+			};
+			buildConfigurationList = 48CBF29C25806FF800612080 /* Build configuration list for PBXProject "Ren" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48CBF29825806FF800612080;
+			productRefGroup = 48CBF2A225806FF800612080 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48CBF2A025806FF800612080 /* Ren */,
+				48CBF2BB25806FF900612080 /* RenTests */,
+				48CBF2C625806FF900612080 /* RenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48CBF29F25806FF800612080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CBF2B425806FF900612080 /* LaunchScreen.storyboard in Resources */,
+				48CBF2B125806FF900612080 /* Assets.xcassets in Resources */,
+				48CBF2AF25806FF800612080 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CBF2BA25806FF900612080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CBF2C525806FF900612080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48CBF29D25806FF800612080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CBF2AC25806FF800612080 /* ViewController.m in Sources */,
+				48CBF2E72580717100612080 /* RenTabBarController.m in Sources */,
+				48CBF2A625806FF800612080 /* AppDelegate.m in Sources */,
+				48CBF2EE258074FD00612080 /* RenTabBarItem.m in Sources */,
+				48AE6A6625807E410033FBF1 /* RenTabBarItemConfig.m in Sources */,
+				48CBF2B725806FF900612080 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CBF2B825806FF900612080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CBF2C125806FF900612080 /* RenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CBF2C325806FF900612080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CBF2CC25806FF900612080 /* RenUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48CBF2BE25806FF900612080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CBF2A025806FF800612080 /* Ren */;
+			targetProxy = 48CBF2BD25806FF900612080 /* PBXContainerItemProxy */;
+		};
+		48CBF2C925806FF900612080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CBF2A025806FF800612080 /* Ren */;
+			targetProxy = 48CBF2C825806FF900612080 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48CBF2AD25806FF800612080 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48CBF2AE25806FF800612080 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48CBF2B225806FF900612080 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48CBF2B325806FF900612080 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48CBF2CE25806FF900612080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48CBF2CF25806FF900612080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48CBF2D125806FF900612080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHYHE776Y8;
+				INFOPLIST_FILE = Ren/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csc.Ren;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48CBF2D225806FF900612080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHYHE776Y8;
+				INFOPLIST_FILE = Ren/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csc.Ren;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48CBF2D425806FF900612080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHYHE776Y8;
+				INFOPLIST_FILE = RenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csc.RenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ren.app/Ren";
+			};
+			name = Debug;
+		};
+		48CBF2D525806FF900612080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHYHE776Y8;
+				INFOPLIST_FILE = RenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csc.RenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ren.app/Ren";
+			};
+			name = Release;
+		};
+		48CBF2D725806FF900612080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHYHE776Y8;
+				INFOPLIST_FILE = RenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csc.RenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ren;
+			};
+			name = Debug;
+		};
+		48CBF2D825806FF900612080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHYHE776Y8;
+				INFOPLIST_FILE = RenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csc.RenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ren;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48CBF29C25806FF800612080 /* Build configuration list for PBXProject "Ren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CBF2CE25806FF900612080 /* Debug */,
+				48CBF2CF25806FF900612080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CBF2D025806FF900612080 /* Build configuration list for PBXNativeTarget "Ren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CBF2D125806FF900612080 /* Debug */,
+				48CBF2D225806FF900612080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CBF2D325806FF900612080 /* Build configuration list for PBXNativeTarget "RenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CBF2D425806FF900612080 /* Debug */,
+				48CBF2D525806FF900612080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CBF2D625806FF900612080 /* Build configuration list for PBXNativeTarget "RenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CBF2D725806FF900612080 /* Debug */,
+				48CBF2D825806FF900612080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48CBF29925806FF800612080 /* Project object */;
+}
