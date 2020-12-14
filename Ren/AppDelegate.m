@@ -18,6 +18,14 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     RenTabBarController *tabBarController = [[RenTabBarController alloc] init];
+    [tabBarController setViewControllers:@
+     [
+     [[NSClassFromString(@"HomeViewController") alloc] init],
+     [[NSClassFromString(@"UGCViewController") alloc] init],
+     [[NSClassFromString(@"VIPViewController") alloc] init],
+     [[NSClassFromString(@"SocialViewController") alloc] init],
+     [[NSClassFromString(@"MeViewController") alloc] init]
+    ]];
     self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
