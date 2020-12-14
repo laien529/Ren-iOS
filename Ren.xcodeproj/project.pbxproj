@@ -28,6 +28,9 @@
 		4814A90425870DA2007D4136 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A8F325870DA2007D4136 /* AFNetworkReachabilityManager.m */; };
 		4814A90525870DA2007D4136 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A8F425870DA2007D4136 /* AFSecurityPolicy.m */; };
 		4814A90E25870F56007D4136 /* RenNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A90D25870F56007D4136 /* RenNetworkManager.m */; };
+		4814A91C25875343007D4136 /* RenJSONManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A91B25875343007D4136 /* RenJSONManager.m */; };
+		4814A9252587535A007D4136 /* RenXMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A9242587535A007D4136 /* RenXMLManager.m */; };
+		4814A92B258753A8007D4136 /* RenProtoBufManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A92A258753A8007D4136 /* RenProtoBufManager.m */; };
 		48AE6A6625807E410033FBF1 /* RenTabBarItemConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */; };
 		48CBF2A625806FF800612080 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2A525806FF800612080 /* AppDelegate.m */; };
 		48CBF2AC25806FF800612080 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2AB25806FF800612080 /* ViewController.m */; };
@@ -104,6 +107,12 @@
 		4814A8F625870DA2007D4136 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		4814A90C25870F56007D4136 /* RenNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenNetworkManager.h; sourceTree = "<group>"; };
 		4814A90D25870F56007D4136 /* RenNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenNetworkManager.m; sourceTree = "<group>"; };
+		4814A91A25875343007D4136 /* RenJSONManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenJSONManager.h; sourceTree = "<group>"; };
+		4814A91B25875343007D4136 /* RenJSONManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenJSONManager.m; sourceTree = "<group>"; };
+		4814A9232587535A007D4136 /* RenXMLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenXMLManager.h; sourceTree = "<group>"; };
+		4814A9242587535A007D4136 /* RenXMLManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenXMLManager.m; sourceTree = "<group>"; };
+		4814A929258753A8007D4136 /* RenProtoBufManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenProtoBufManager.h; sourceTree = "<group>"; };
+		4814A92A258753A8007D4136 /* RenProtoBufManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenProtoBufManager.m; sourceTree = "<group>"; };
 		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
 		48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTabBarItemConfig.m; sourceTree = "<group>"; };
 		48CBF2A125806FF800612080 /* Ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +325,8 @@
 			isa = PBXGroup;
 			children = (
 				4814A91925874D46007D4136 /* external */,
+				4814A91A25875343007D4136 /* RenJSONManager.h */,
+				4814A91B25875343007D4136 /* RenJSONManager.m */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -323,6 +334,8 @@
 		4814A91725874D12007D4136 /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				4814A9232587535A007D4136 /* RenXMLManager.h */,
+				4814A9242587535A007D4136 /* RenXMLManager.m */,
 			);
 			path = XML;
 			sourceTree = "<group>";
@@ -330,6 +343,8 @@
 		4814A91825874D2F007D4136 /* ProtoBuf */ = {
 			isa = PBXGroup;
 			children = (
+				4814A929258753A8007D4136 /* RenProtoBufManager.h */,
+				4814A92A258753A8007D4136 /* RenProtoBufManager.m */,
 			);
 			path = ProtoBuf;
 			sourceTree = "<group>";
@@ -542,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4814A8FC25870DA2007D4136 /* UIButton+AFNetworking.m in Sources */,
+				4814A91C25875343007D4136 /* RenJSONManager.m in Sources */,
 				4814A8AF25836C1A007D4136 /* VIPViewController.m in Sources */,
 				48CBF2AC25806FF800612080 /* ViewController.m in Sources */,
 				48CBF2E72580717100612080 /* RenTabBarController.m in Sources */,
@@ -549,6 +565,7 @@
 				4814A90125870DA2007D4136 /* AFHTTPSessionManager.m in Sources */,
 				48CBF2A625806FF800612080 /* AppDelegate.m in Sources */,
 				4814A8FD25870DA2007D4136 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				4814A9252587535A007D4136 /* RenXMLManager.m in Sources */,
 				4814A8FF25870DA2007D4136 /* AFImageDownloader.m in Sources */,
 				4814A90E25870F56007D4136 /* RenNetworkManager.m in Sources */,
 				4814A8F725870DA2007D4136 /* UIProgressView+AFNetworking.m in Sources */,
@@ -557,6 +574,7 @@
 				4814A90425870DA2007D4136 /* AFNetworkReachabilityManager.m in Sources */,
 				4814A8A925836C0F007D4136 /* UGCViewController.m in Sources */,
 				4814A8F825870DA2007D4136 /* UIRefreshControl+AFNetworking.m in Sources */,
+				4814A92B258753A8007D4136 /* RenProtoBufManager.m in Sources */,
 				48AE6A6625807E410033FBF1 /* RenTabBarItemConfig.m in Sources */,
 				4814A90325870DA2007D4136 /* AFURLRequestSerialization.m in Sources */,
 				4814A8B525836C5C007D4136 /* SocialViewController.m in Sources */,
