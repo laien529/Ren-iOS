@@ -1,1 +1,2 @@
 github "AFNetworking/AFNetworking" "4.0.1"
+github "ibireme/YYKit" "1.0.9"
