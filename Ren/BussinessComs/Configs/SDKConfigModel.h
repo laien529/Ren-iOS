@@ -19,9 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@implementation SDKConfigs
 
-@end
 
 
 
@@ -45,9 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@implementation SDK
 
-@end
 
 
 
@@ -67,38 +63,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@implementation JSSDK
 
-@end
 
 
 @interface SDKConfigDataModel : NSObject
 
 //************分割线************
 ///
-@property (nonatomic,strong) NSMutableArray<SDK*> *sdk;//
+@property (nonatomic,strong) NSMutableArray *sdk;//
 ///
-@property (nonatomic,strong) NSMutableArray<JSSDK*> *jssdk;//
+@property (nonatomic,strong) NSMutableArray *jssdk;//
 
 @end
 
-@implementation SDKConfigDataModel
 
-@end
 
 
 
 @interface SDKConfigModel : YYBaseModel
 ///
-@property (nonatomic,strong) NSDictionary<NSString*, SDKConfigDataModel*> *data;//
+@property (nonatomic,strong) SDKConfigDataModel *data;//
 
 @end
-
-@implementation SDKConfigModel
-
-@end
-
-
 
 
 NS_ASSUME_NONNULL_END

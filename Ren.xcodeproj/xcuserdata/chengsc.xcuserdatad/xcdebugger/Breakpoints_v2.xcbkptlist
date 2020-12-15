@@ -52,14 +52,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FA7964A0-0EFC-4D67-9F5E-642B8B9C6EC1"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ren/BussinessComs/Configs/SDKConfigDataSource.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "+requestSDKConfig"
             landmarkType = "7">
          </BreakpointContent>
@@ -77,6 +77,22 @@
             startingLineNumber = "1459"
             endingLineNumber = "1459"
             landmarkName = "+modelWithDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47235DC0-C70A-4E86-926C-8F7F4CF654A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ren/BussinessComs/Configs/SDKConfigModel.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "+modelContainerPropertyGenercClass"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
