@@ -31,6 +31,9 @@
 		4814A91C25875343007D4136 /* RenJSONManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A91B25875343007D4136 /* RenJSONManager.m */; };
 		4814A9252587535A007D4136 /* RenXMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A9242587535A007D4136 /* RenXMLManager.m */; };
 		4814A92B258753A8007D4136 /* RenProtoBufManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A92A258753A8007D4136 /* RenProtoBufManager.m */; };
+		4814A93425885B52007D4136 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; };
+		4814A93525885B52007D4136 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4814A94D2588680D007D4136 /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4814A94C2588680D007D4136 /* LottieLogo1.json */; };
 		48AE6A6625807E410033FBF1 /* RenTabBarItemConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */; };
 		48CBF2A625806FF800612080 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2A525806FF800612080 /* AppDelegate.m */; };
 		48CBF2AC25806FF800612080 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2AB25806FF800612080 /* ViewController.m */; };
@@ -145,6 +148,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4814A93625885B52007D4136 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4814A93525885B52007D4136 /* Lottie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4814A89E25836BF5007D4136 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		4814A89F25836BF5007D4136 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -197,6 +214,8 @@
 		4814A9242587535A007D4136 /* RenXMLManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenXMLManager.m; sourceTree = "<group>"; };
 		4814A929258753A8007D4136 /* RenProtoBufManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenProtoBufManager.h; sourceTree = "<group>"; };
 		4814A92A258753A8007D4136 /* RenProtoBufManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenProtoBufManager.m; sourceTree = "<group>"; };
+		4814A93325885B52007D4136 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		4814A94C2588680D007D4136 /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LottieLogo1.json; path = "Carthage/Checkouts/lottie-ios/Example/Tests/LottieLogo1.json"; sourceTree = SOURCE_ROOT; };
 		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
 		48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTabBarItemConfig.m; sourceTree = "<group>"; };
 		48CBF2A125806FF800612080 /* Ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,6 +415,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4814A93425885B52007D4136 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +632,14 @@
 			path = external;
 			sourceTree = "<group>";
 		};
+		4814A93225885B52007D4136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4814A93325885B52007D4136 /* Lottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48CBF29825806FF800612080 = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +647,7 @@
 				48CBF2BF25806FF900612080 /* RenTests */,
 				48CBF2CA25806FF900612080 /* RenUITests */,
 				48CBF2A225806FF800612080 /* Products */,
+				4814A93225885B52007D4136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -635,6 +664,7 @@
 		48CBF2A325806FF800612080 /* Ren */ = {
 			isa = PBXGroup;
 			children = (
+				4814A94C2588680D007D4136 /* LottieLogo1.json */,
 				4814A8C82587077C007D4136 /* BussinessComs */,
 				4814A8C225870450007D4136 /* BaseComs */,
 				4814A89D25836B8D007D4136 /* TabControllers */,
@@ -974,6 +1004,7 @@
 				48CBF29D25806FF800612080 /* Sources */,
 				48CBF29E25806FF800612080 /* Frameworks */,
 				48CBF29F25806FF800612080 /* Resources */,
+				4814A93625885B52007D4136 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1069,6 +1100,7 @@
 				48CBF2B425806FF900612080 /* LaunchScreen.storyboard in Resources */,
 				48CBF2B125806FF900612080 /* Assets.xcassets in Resources */,
 				48CBF2AF25806FF800612080 /* Main.storyboard in Resources */,
+				4814A94D2588680D007D4136 /* LottieLogo1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1380,6 +1412,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NHYHE776Y8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Ren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1398,6 +1434,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NHYHE776Y8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Ren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

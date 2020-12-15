@@ -199,70 +199,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80DB9634-E86C-4C0E-90DE-D3417925B6BA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ren/TabControllers/HomeViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "80DB9634-E86C-4C0E-90DE-D3417925B6BA - 4e1121d16335b818"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[HomeViewController viewDidLoad]_block_invoke"
-                  moduleName = "Ren"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/csc/Documents/iOS/Ren/Ren/TabControllers/HomeViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "80DB9634-E86C-4C0E-90DE-D3417925B6BA - 24e0552e3398e9c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[HomeViewController viewDidLoad]_block_invoke_2"
-                  moduleName = "Ren"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/csc/Documents/iOS/Ren/Ren/TabControllers/HomeViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5811CCD8-3167-4C7C-A89C-005216106FEA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ren/TabControllers/HomeViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DCD3C9BC-FF05-455B-AFB6-0D1831C64BB9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -306,38 +242,22 @@
             endingLineNumber = "42"
             landmarkName = "-requestWithMethod:URLString:parameters:headers:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "79EDE579-7ED0-456F-BECD-801D9E09FC02 - 1ed81b448db56435"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__68-[RenNetworkManager requestWithMethod:URLString:parameters:headers:]_block_invoke_2"
-                  moduleName = "Ren"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/csc/Documents/iOS/Ren/Ren/BaseLib/NetworkLib/External/RenNetworkManager.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "79EDE579-7ED0-456F-BECD-801D9E09FC02 - 1ed81b448a357bd7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__68-[RenNetworkManager requestWithMethod:URLString:parameters:headers:]_block_invoke_3"
-                  moduleName = "Ren"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/csc/Documents/iOS/Ren/Ren/BaseLib/NetworkLib/External/RenNetworkManager.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "746CC482-FD7A-4BDF-9AA0-BCAF3C91B0E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ren/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

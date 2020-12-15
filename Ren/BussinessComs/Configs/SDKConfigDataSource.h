@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SDKConfigModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKConfigDataSource : NSObject
 
-+ (void)requestSDKConfig;
++ (void)requestSDKConfig:(void (^)(SDKConfigModel* configModel))block;
 
 @end
 

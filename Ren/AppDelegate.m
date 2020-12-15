@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "RenTabBarController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -27,8 +28,8 @@
      [[NSClassFromString(@"MeViewController") alloc] init]
     ]];
     self.window.rootViewController = tabBarController;
-    
     [self.window makeKeyAndVisible];
+    [self.window addSubview:[[ViewController alloc] init].view];
     return YES;
 }
 

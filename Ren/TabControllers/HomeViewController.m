@@ -18,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [SDKConfigDataSource requestSDKConfig];
+    [SDKConfigDataSource requestSDKConfig:^(SDKConfigModel * _Nonnull configModel) {
+        
+    }];
 }
 - (void)viewDidAppear:(BOOL)animated {
     
