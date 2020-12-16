@@ -260,5 +260,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F20F8CE6-2C79-4B0B-AD38-77D494396900"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ren/BussinessComs/Feed/FeedFlowViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-fetchFeedDatas"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACAFA372-F68B-4E74-A72E-FCABA70F5017"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ren/BaseComs/NetworkLib/RenNetworkManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-requestWithMethod:URLString:parameters:headers:successBlock:failedBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82600BDF-15C6-4E67-BBB3-F50C2A9EE949"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ren/BussinessComs/Feed/FeedDataSource.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "+requestFeedDatas:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82600BDF-15C6-4E67-BBB3-F50C2A9EE949 - ef796bf53c7a54d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35+[FeedDataSource requestFeedDatas:]_block_invoke"
+                  moduleName = "Ren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/csc/Documents/iOS/Ren/Ren/BussinessComs/Feed/FeedDataSource.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "82600BDF-15C6-4E67-BBB3-F50C2A9EE949 - f644f6ccd6dcae6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35+[FeedDataSource requestFeedDatas:]_block_invoke_2"
+                  moduleName = "Ren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/csc/Documents/iOS/Ren/Ren/BussinessComs/Feed/FeedDataSource.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

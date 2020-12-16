@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import "RenTabBarController.h"
 #import "ViewController.h"
+#import "SDKConfigDataSource.h"
 
 @interface AppDelegate ()
 @end
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [SDKConfigDataSource requestSDKConfig:^(SDKConfigModel * _Nonnull configModel) {
+        
+    }];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     RenTabBarController *tabBarController = [[RenTabBarController alloc] init];
     [tabBarController setViewControllers:@

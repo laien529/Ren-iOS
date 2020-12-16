@@ -196,3 +196,11 @@ Carthage/Checkouts/lottie-ios/Lottie.xcodeproj/xcshareddata/xcschemes/Lottie_mac
 Carthage/Checkouts/lottie-ios/Lottie.xcodeproj/xcshareddata/xcschemes/Lottie_tvOS.xcscheme
 Carthage/Checkouts/lottie-ios/MacOS_Viewer/LottieViewer.zip
 Carthage/Build/Mac
+Carthage/Checkouts/fmdb/fmdb.xcodeproj
+Carthage/Checkouts/fmdb/Tests
+Carthage/Checkouts/fmdb/.travis.yml
+Carthage/Checkouts/fmdb/CHANGES_AND_TODO_LIST.txt
+Carthage/Checkouts/fmdb/CONTRIBUTORS.txt
+Carthage/Checkouts/fmdb/FMDB.podspec
+Carthage/Checkouts/fmdb/LICENSE.txt
+Carthage/Checkouts/fmdb/README.markdown

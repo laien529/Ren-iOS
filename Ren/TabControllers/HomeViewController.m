@@ -6,8 +6,7 @@
 //
 
 #import "HomeViewController.h"
-#import "RenNetworkManager.h"
-#import "SDKConfigDataSource.h"
+#import "FeedFlowViewController.h"
 
 @interface HomeViewController ()
 
@@ -18,9 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [SDKConfigDataSource requestSDKConfig:^(SDKConfigModel * _Nonnull configModel) {
-        
-    }];
+    FeedFlowViewController *feedFlow = [[FeedFlowViewController alloc] init];
+    [self addChildViewController:feedFlow];
+    [self.view addSubview:feedFlow.view];
+
 }
 - (void)viewDidAppear:(BOOL)animated {
     
