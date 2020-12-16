@@ -8,8 +8,7 @@
 #import "RenTabBarController.h"
 #import "RenTabBarItem.h"
 
-#define kScreenWidth MIN(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
-#define kScreenHeight MIN(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
+
 #define statusBarHeight CGRectGetHeight(UIApplication.sharedApplication.statusBarFrame)
 
 #define tabBarHeight (statusBarHeight == 20 ? 49 : 83)

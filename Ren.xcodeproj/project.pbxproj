@@ -148,6 +148,7 @@
 		B023797625876DBA008E03B4 /* SDKConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B023797525876DBA008E03B4 /* SDKConfigModel.m */; };
 		B023797C258779D7008E03B4 /* YYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B023797B258779D7008E03B4 /* YYBaseModel.m */; };
 		B023798225884468008E03B4 /* SDKConfigDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B023798125884468008E03B4 /* SDKConfigDataSource.m */; };
+		B06CB0BE2589E87E0085F586 /* HorizontalSTD.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CB0BD2589E87E0085F586 /* HorizontalSTD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -463,6 +464,9 @@
 		B023797B258779D7008E03B4 /* YYBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBaseModel.m; sourceTree = "<group>"; };
 		B023798025884468008E03B4 /* SDKConfigDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKConfigDataSource.h; sourceTree = "<group>"; };
 		B023798125884468008E03B4 /* SDKConfigDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKConfigDataSource.m; sourceTree = "<group>"; };
+		B06CB0BC2589E87E0085F586 /* HorizontalSTD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalSTD.h; sourceTree = "<group>"; };
+		B06CB0BD2589E87E0085F586 /* HorizontalSTD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalSTD.m; sourceTree = "<group>"; };
+		B06CB0BF2589EEC10085F586 /* Ren.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ren.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -814,6 +818,8 @@
 				4814AA4C2589A673007D4136 /* FeedDataSource.m */,
 				4814AA522589A6CC007D4136 /* FeedDataModel.h */,
 				4814AA532589A6CC007D4136 /* FeedDataModel.m */,
+				B06CB0BC2589E87E0085F586 /* HorizontalSTD.h */,
+				B06CB0BD2589E87E0085F586 /* HorizontalSTD.m */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -856,6 +862,7 @@
 				48CBF2B225806FF900612080 /* LaunchScreen.storyboard */,
 				48CBF2B525806FF900612080 /* Info.plist */,
 				48CBF2B625806FF900612080 /* main.m */,
+				B06CB0BF2589EEC10085F586 /* Ren.pch */,
 			);
 			path = Ren;
 			sourceTree = "<group>";
@@ -1366,6 +1373,7 @@
 				B023795425876A1A008E03B4 /* NSString+YYAdd.m in Sources */,
 				B023792C25876A1A008E03B4 /* YYTextInput.m in Sources */,
 				4814A9652588A5A5007D4136 /* UITableView+SCIndexView.m in Sources */,
+				B06CB0BE2589E87E0085F586 /* HorizontalSTD.m in Sources */,
 				B023793D25876A1A008E03B4 /* UIBezierPath+YYAdd.m in Sources */,
 				4814A8F725870DA2007D4136 /* UIProgressView+AFNetworking.m in Sources */,
 				B023795F25876A1A008E03B4 /* YYDispatchQueuePool.m in Sources */,
@@ -1603,7 +1611,7 @@
 		48CBF2D125806FF900612080 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = arm64;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1614,6 +1622,8 @@
 					"$(PROJECT_DIR)/Ren/BaseComs/NetworkLib/External",
 					"$(PROJECT_DIR)/Ren/BaseComs/NetworkLib/External/mars",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ren/Ren.pch;
 				INFOPLIST_FILE = Ren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1628,7 +1638,7 @@
 		48CBF2D225806FF900612080 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = arm64;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1639,6 +1649,8 @@
 					"$(PROJECT_DIR)/Ren/BaseComs/NetworkLib/External",
 					"$(PROJECT_DIR)/Ren/BaseComs/NetworkLib/External/mars",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ren/Ren.pch;
 				INFOPLIST_FILE = Ren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

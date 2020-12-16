@@ -9,7 +9,11 @@
 #import "FeedDataSource.h"
 
 @interface FeedFlowViewController ()
+
 @property (nonatomic, strong)UIStackView *stackView;
+@property (nonatomic, strong)FeedDataModel *dataModel;
+@property (nonatomic, strong)NSMutableArray *feedArray;
+
 @end
 
 @implementation FeedFlowViewController
@@ -18,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _stackView = [[UIStackView alloc] initWithFrame:self.view.frame];
+    
     [self.view addSubview:_stackView];
     
     [self fetchFeedDatas];
@@ -25,7 +30,21 @@
 
 - (void)fetchFeedDatas {
     [FeedDataSource requestFeedDatas:^(FeedDataModel * _Nonnull dataModel) {
+        self.dataModel = dataModel;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self reloadStackViewSubs:self.dataModel.moduleData];
+        });
     }];
+}
+
+- (void)reloadStackViewSubs:(NSArray*)datas {
+    for (ModuleData *moduleData in datas) {
+        
+    }
+}
+
+- (void)addToStackViewSubs:(NSArray*)datas {
+    
 }
 /*
 #pragma mark - Navigation
