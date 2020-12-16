@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4812DCAD2589B56000017A1B /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4812DCAC2589B56000017A1B /* LottieLogo1.json */; };
 		4814A8A025836BF5007D4136 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A89F25836BF5007D4136 /* HomeViewController.m */; };
 		4814A8A925836C0F007D4136 /* UGCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A8A825836C0F007D4136 /* UGCViewController.m */; };
 		4814A8AF25836C1A007D4136 /* VIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A8AE25836C1A007D4136 /* VIPViewController.m */; };
@@ -33,7 +34,6 @@
 		4814A92B258753A8007D4136 /* RenProtoBufManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A92A258753A8007D4136 /* RenProtoBufManager.m */; };
 		4814A93425885B52007D4136 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; };
 		4814A93525885B52007D4136 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4814A94D2588680D007D4136 /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4814A94C2588680D007D4136 /* LottieLogo1.json */; };
 		4814A9632588A5A5007D4136 /* SCIndexViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A95D2588A5A5007D4136 /* SCIndexViewConfiguration.m */; };
 		4814A9642588A5A5007D4136 /* SCIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A95F2588A5A5007D4136 /* SCIndexView.m */; };
 		4814A9652588A5A5007D4136 /* UITableView+SCIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814A9612588A5A5007D4136 /* UITableView+SCIndexView.m */; };
@@ -182,6 +182,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4812DCAC2589B56000017A1B /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1.json; sourceTree = "<group>"; };
 		4814A89E25836BF5007D4136 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		4814A89F25836BF5007D4136 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4814A8A725836C0F007D4136 /* UGCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UGCViewController.h; sourceTree = "<group>"; };
@@ -234,7 +235,6 @@
 		4814A929258753A8007D4136 /* RenProtoBufManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenProtoBufManager.h; sourceTree = "<group>"; };
 		4814A92A258753A8007D4136 /* RenProtoBufManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenProtoBufManager.m; sourceTree = "<group>"; };
 		4814A93325885B52007D4136 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
-		4814A94C2588680D007D4136 /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LottieLogo1.json; path = "Carthage/Checkouts/lottie-ios/Example/Tests/LottieLogo1.json"; sourceTree = SOURCE_ROOT; };
 		4814A95D2588A5A5007D4136 /* SCIndexViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexViewConfiguration.m; sourceTree = "<group>"; };
 		4814A95E2588A5A5007D4136 /* UITableView+SCIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SCIndexView.h"; sourceTree = "<group>"; };
 		4814A95F2588A5A5007D4136 /* SCIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexView.m; sourceTree = "<group>"; };
@@ -842,7 +842,7 @@
 		48CBF2A325806FF800612080 /* Ren */ = {
 			isa = PBXGroup;
 			children = (
-				4814A94C2588680D007D4136 /* LottieLogo1.json */,
+				4812DCAC2589B56000017A1B /* LottieLogo1.json */,
 				4814A8C82587077C007D4136 /* BussinessComs */,
 				4814A8C225870450007D4136 /* BaseComs */,
 				4814A89D25836B8D007D4136 /* TabControllers */,
@@ -1278,7 +1278,7 @@
 				48CBF2B425806FF900612080 /* LaunchScreen.storyboard in Resources */,
 				48CBF2B125806FF900612080 /* Assets.xcassets in Resources */,
 				48CBF2AF25806FF800612080 /* Main.storyboard in Resources */,
-				4814A94D2588680D007D4136 /* LottieLogo1.json in Resources */,
+				4812DCAD2589B56000017A1B /* LottieLogo1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
