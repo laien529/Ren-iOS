@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YYBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

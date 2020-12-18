@@ -7,10 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import "FeedDataModel.h"
+#import "RenTableViewCellProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HorizontalSTD : UIView
+@interface HorizontalSTD : UIView<RenTableViewCellProtocol>
 
 @property(nonatomic, strong) UIView *backgroundView;
 @property(nonatomic, strong) UIImageView *coverImageView;
@@ -18,8 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UILabel *subTitleLabel;
 @property(nonatomic, strong) UIImageView *cornerIcon;
 
-- (void)setData:(ModuleData*)data;
-
+@property(nonatomic, assign) CGFloat cellHeight;
 
 @end
 

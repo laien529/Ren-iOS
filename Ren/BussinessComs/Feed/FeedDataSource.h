@@ -10,9 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedDataSource : NSObject
+@interface FeedDataSource : NSObject<UITableViewDataSource>
 
-+ (void)requestFeedDatas:(void (^)(FeedDataModel* dataModel))block;
+@property(nonatomic, strong) FeedDataModel *feedModel;
+@property(nonatomic, strong) NSMutableDictionary *rowHeightCache;
+
+- (void)requestFeedDatas:(void (^)(FeedDataModel* dataModel))block;
 
 @end
 

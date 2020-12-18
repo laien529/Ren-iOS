@@ -11,11 +11,21 @@
 
 @end
 
-@implementation FeedDataModel
+@implementation FeedData
 
 + (NSDictionary*)modelContainerPropertyGenericClass {
     return @{
         @"moduleData":ModuleData.class
+    };
+}
+
+@end
+
+@implementation FeedDataModel
+
++ (NSDictionary*)modelContainerPropertyGenericClass {
+    return @{
+        @"data":FeedData.class
     };
 }
 

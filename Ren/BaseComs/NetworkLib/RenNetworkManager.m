@@ -60,7 +60,7 @@
             
             failedBlock(error, task.response, 0);
         }
-        NSLog(@"responseObject:%@", responseObject);
+//        NSLog(@"responseObject:%@", responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failedBlock(error, task.response, 0);
     }];

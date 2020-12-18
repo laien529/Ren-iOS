@@ -196,4 +196,6 @@ FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
 #import "YYThreadSafeArray.h"
 #import "YYThreadSafeDictionary.h"
 
+#import "YYBaseModel.h"
+
 #endif

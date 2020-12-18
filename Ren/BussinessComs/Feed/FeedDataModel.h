@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YYBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *jumpKind;
 @property(nonatomic, strong)NSString *rightCorner;
 @property(nonatomic, strong)NSString *imgHUrlToMobile;
+@property(nonatomic, strong)NSString *imgHVUrl;
+@property(nonatomic, strong)NSString *imgHUrl;
 @property(nonatomic, strong)NSString *videoId;
 @property(nonatomic, strong)NSString *jumpId;
 @property(nonatomic, strong)NSString *childId;
@@ -29,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface FeedDataModel : YYBaseModel
+@interface FeedData : NSObject
 @property(nonatomic, strong)NSString *moduleTitle;
 @property(nonatomic, strong)NSString *moduleType;
 @property(nonatomic, strong)NSString *moduleName;
@@ -37,4 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface FeedDataModel : YYBaseModel
+///
+@property (nonatomic,strong) NSArray *data;//
+
+@end
 NS_ASSUME_NONNULL_END

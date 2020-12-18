@@ -6,10 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RenTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FeedFlowViewController : UIViewController
+
+@property (nonatomic, strong)RenTableViewController *tableViewController;
+@property (nonatomic, strong)UIStackView *stackView;
 
 @end
 
