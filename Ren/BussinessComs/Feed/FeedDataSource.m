@@ -32,7 +32,7 @@
     ModuleData *moduleData = [feedData.moduleData objectAtIndex:indexPath.row];
     feedData.moduleType = @"HorizontalSTD";
     [tableView registerClass:[RenTableViewCell class] forCellReuseIdentifier:feedData.moduleType];
-    RenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:feedData.moduleType forIndexPath:indexPath];
+    RenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:feedData.moduleType];
     if (!cell) {
         cell = [[RenTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:feedData.moduleType];
     }

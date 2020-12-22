@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UIImageView *cornerIcon;
 
 @property(nonatomic, assign) CGFloat cellHeight;
+@property(nonatomic, copy) ClickBlock block;
 
 @end
 

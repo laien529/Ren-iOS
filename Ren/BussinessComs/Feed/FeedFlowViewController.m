@@ -35,7 +35,7 @@
         make.height.mas_equalTo(self.view);
 
     }];
-    _tableViewController.view.backgroundColor = UIColor.yellowColor;
+    _tableViewController.view.backgroundColor = UIColor.whiteColor;
   
     _stackView = [[UIStackView alloc] initWithFrame:self.view.frame];
 

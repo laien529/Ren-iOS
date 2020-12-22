@@ -51,6 +51,8 @@
 		4814AA462589A5C3007D4136 /* FeedFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA452589A5C3007D4136 /* FeedFlowViewController.m */; };
 		4814AA4D2589A673007D4136 /* FeedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA4C2589A673007D4136 /* FeedDataSource.m */; };
 		4814AA542589A6CC007D4136 /* FeedDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA532589A6CC007D4136 /* FeedDataModel.m */; };
+		48540AC5258CAE8F00FF935A /* RenNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AC4258CAE8F00FF935A /* RenNavigationBar.m */; };
+		48540ACF258CB58200FF935A /* RenScaffold.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540ACE258CB58200FF935A /* RenScaffold.m */; };
 		48A62C1C258C4016003828F5 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; };
 		48A62C1F258C4047003828F5 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48A62C27258C9BA5003828F5 /* RenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A62C26258C9BA5003828F5 /* RenTableViewCell.m */; };
@@ -286,6 +288,10 @@
 		4814AA4C2589A673007D4136 /* FeedDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedDataSource.m; sourceTree = "<group>"; };
 		4814AA522589A6CC007D4136 /* FeedDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedDataModel.h; sourceTree = "<group>"; };
 		4814AA532589A6CC007D4136 /* FeedDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedDataModel.m; sourceTree = "<group>"; };
+		48540AC3258CAE8F00FF935A /* RenNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenNavigationBar.h; sourceTree = "<group>"; };
+		48540AC4258CAE8F00FF935A /* RenNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenNavigationBar.m; sourceTree = "<group>"; };
+		48540ACD258CB58200FF935A /* RenScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenScaffold.h; sourceTree = "<group>"; };
+		48540ACE258CB58200FF935A /* RenScaffold.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenScaffold.m; sourceTree = "<group>"; };
 		48A62C25258C9BA5003828F5 /* RenTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTableViewCell.h; sourceTree = "<group>"; };
 		48A62C26258C9BA5003828F5 /* RenTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTableViewCell.m; sourceTree = "<group>"; };
 		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
@@ -621,6 +627,7 @@
 		4814A8C725870737007D4136 /* UILib */ = {
 			isa = PBXGroup;
 			children = (
+				48540ACA258CB3D700FF935A /* Scraffold */,
 				48DD13502589FB6B0000FC2D /* Layout */,
 				4814A95B2588A5A5007D4136 /* SectionIndex */,
 				4814A8CA25870A1F007D4136 /* Theme */,
@@ -886,6 +893,24 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		48540AC2258CAD3600FF935A /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				48540AC3258CAE8F00FF935A /* RenNavigationBar.h */,
+				48540AC4258CAE8F00FF935A /* RenNavigationBar.m */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		48540ACA258CB3D700FF935A /* Scraffold */ = {
+			isa = PBXGroup;
+			children = (
+				48540ACD258CB58200FF935A /* RenScaffold.h */,
+				48540ACE258CB58200FF935A /* RenScaffold.m */,
+			);
+			path = Scraffold;
+			sourceTree = "<group>";
+		};
 		48A62C24258C979A003828F5 /* Template */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,6 +944,7 @@
 		48CBF2A325806FF800612080 /* Ren */ = {
 			isa = PBXGroup;
 			children = (
+				48540AC2258CAD3600FF935A /* NavigationBar */,
 				4812DCAC2589B56000017A1B /* LottieLogo1.json */,
 				4814A8C82587077C007D4136 /* BussinessComs */,
 				4814A8C225870450007D4136 /* BaseComs */,
@@ -1471,9 +1497,11 @@
 				B023795E25876A1A008E03B4 /* YYTransaction.m in Sources */,
 				B023791A25876A1A008E03B4 /* YYWebImageManager.m in Sources */,
 				48DD1380258B76960000FC2D /* FeedFlowCellFactory.m in Sources */,
+				48540ACF258CB58200FF935A /* RenScaffold.m in Sources */,
 				B023792A25876A1A008E03B4 /* YYTextContainerView.m in Sources */,
 				B023795C25876A1A008E03B4 /* YYThreadSafeDictionary.m in Sources */,
 				4814A8FF25870DA2007D4136 /* AFImageDownloader.m in Sources */,
+				48540AC5258CAE8F00FF935A /* RenNavigationBar.m in Sources */,
 				4814A90E25870F56007D4136 /* RenNetworkManager.m in Sources */,
 				B023793E25876A1A008E03B4 /* UIColor+YYAdd.m in Sources */,
 				B023794625876A1A008E03B4 /* UIGestureRecognizer+YYAdd.m in Sources */,

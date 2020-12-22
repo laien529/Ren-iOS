@@ -43,8 +43,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     FeedData *data = _renDataSource.feedModel.data[indexPath.section];
-    RenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:data.moduleType forIndexPath:indexPath];
-    
+    ModuleData *moduleData = data.moduleData[indexPath.row];
+    RenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:data.moduleType];
+    if (cell.block) {
+        cell.block(moduleData);
+    }
 
 }
 @end

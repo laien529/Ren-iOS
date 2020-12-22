@@ -60,11 +60,40 @@
             
             failedBlock(error, task.response, 0);
         }
-//        NSLog(@"responseObject:%@", responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failedBlock(error, task.response, 0);
     }];
-    
+    [_sessionManager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
+        NSDate *startTime = objc_getAssociatedObject(dataTask, "startTime");
+        NSDate *now = [NSDate date];
+        NSDate *preTime = objc_getAssociatedObject(dataTask, "preTime");
+        NSLog(@"Data Length:%zd", data.length);
+
+        NSLog(@"startTime:%f", [startTime timeIntervalSince1970]);
+        NSLog(@"preTime:%f", [preTime timeIntervalSince1970]);
+        NSLog(@"now:%f", [now timeIntervalSince1970]);
+
+        if (startTime) { //httprtt
+            NSTimeInterval httprtt = [now timeIntervalSinceDate:startTime];
+            NSLog(@"httprtt: %f, %@", httprtt,  dataTask.currentRequest.URL.absoluteURL.path);
+            objc_setAssociatedObject(dataTask, "startTime", nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+        }
+        if (preTime) { //throughput
+            NSTimeInterval duration = [now timeIntervalSinceDate:preTime];
+            NSLog(@"receive interval: %f,  throughput: %.2f KB, %@", duration, data.length / 1024.0f / duration,  dataTask.currentRequest.URL.absoluteURL.path );
+            objc_setAssociatedObject(dataTask, "preTime", now, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            NSLog(@"%@", @"*1");
+        } else {
+            objc_setAssociatedObject(dataTask, "preTime", now, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            NSLog(@"%@", @"*2");
+
+        }
+        NSLog(@"%@", @"*****************");
+
+    }];
+    objc_setAssociatedObject(task, "startTime", [NSDate date], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
     [task resume];
 }
 

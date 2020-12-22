@@ -7,6 +7,7 @@
 
 #import "HomeViewController.h"
 #import "FeedFlowViewController.h"
+#import "RenNavigationBar.h"
 
 @interface HomeViewController ()
 
@@ -20,6 +21,7 @@
     FeedFlowViewController *feedFlow = [[FeedFlowViewController alloc] init];
     [self addChildViewController:feedFlow];
     [self.view addSubview:feedFlow.view];
+    [self.view addSubview:[[RenNavigationBar alloc] init]];
 
 }
 - (void)viewDidAppear:(BOOL)animated {

@@ -67,7 +67,10 @@ static const float totalHeight = 250;
     
     _cellHeight = totalHeight;
     _titleLabel.text = data.name;
+    _titleLabel.textColor = UIColor.darkGrayColor;
     _subTitleLabel.text = data.subName;
+    _subTitleLabel.textColor = UIColor.lightGrayColor;
+
     NSURL *url = [NSURL URLWithString:data.imgHUrlToMobile];
     if (!url) {
         url = [NSURL URLWithString:data.imgHUrl];
@@ -77,6 +80,9 @@ static const float totalHeight = 250;
     }
     [_coverImageView setImageWithURL:url placeholder:nil];
     
+    self.block = ^(ModuleData*  _Nonnull dt) {
+        NSLog(dt.name);
+    };
 }
 
 
