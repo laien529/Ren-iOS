@@ -23,7 +23,7 @@ const static NSInteger kAreaHeight = 44;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.frame = CGRectMake(0, 44, kRenScreenWidth, 44);
+        self.frame = CGRectMake(0, 44, kRenScreenWidth, 250);
         [self setupBackButton];
         [self setupTopArea];
         [self setupBottomArea];
@@ -55,7 +55,7 @@ const static NSInteger kAreaHeight = 44;
 
 - (void)layoutSubviews {
     _topArea.frame = CGRectMake(44, 0, kRenScreenWidth - 44, kAreaHeight);
-    _bottomArea.frame = CGRectMake(0, kRenScreenWidth - kAreaHeight, kRenScreenWidth, kAreaHeight);
+    _bottomArea.frame = CGRectMake(0, 250 - kAreaHeight, kRenScreenWidth, kAreaHeight);
     
     [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self);
@@ -86,6 +86,17 @@ const static NSInteger kAreaHeight = 44;
         make.height.equalTo(@22);
         make.width.equalTo(@22);
         
+    }];
+    
+    UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [playBtn setImage:[UIImage imageNamed:@"play-butt"] forState:UIControlStateNormal];
+    [playBtn addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
+    [_bottomArea addSubview:playBtn];
+    [playBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(_bottomArea);
+        make.leading.equalTo(_bottomArea);
+        make.width.equalTo(@44);
+        make.height.equalTo(@44);
     }];
 }
 

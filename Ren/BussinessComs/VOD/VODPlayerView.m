@@ -26,4 +26,12 @@
     }
     return self;;
 }
+
+- (void)play {
+    if (_player.avPlayer.timeControlStatus == AVPlayerTimeControlStatusPlaying) {
+        [_player.avPlayer pause];
+    } else if (_player.avPlayer.timeControlStatus == AVPlayerTimeControlStatusPaused) {
+        [_player.avPlayer play];
+    }
+}
 @end

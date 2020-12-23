@@ -109,7 +109,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [_playerView.player.avPlayer play];
+//    [_playerView play];
 }
 - (void)viewWillLayoutSubviews {
     
@@ -120,7 +120,7 @@
 }
 
 - (void)play {
-    
+    [_playerView play];
 }
 
 - (void)dealloc {
