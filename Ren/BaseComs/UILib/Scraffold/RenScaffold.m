@@ -20,7 +20,7 @@
 - (instancetype)init {
     self = [super initWithFrame:CGRectMake(0, 0, kRenScreenWidth, kRenScreenHeight)];
     if (self) {
-        bottomBaseLineY = kRenScreenHeight - tabbarHeight;
+        bottomBaseLineY = kRenScreenHeight - tabBarHeight;
     }
     return self;
 }
