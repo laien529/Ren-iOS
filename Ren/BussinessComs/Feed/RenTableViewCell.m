@@ -28,4 +28,5 @@
     [self.contentView addSubview:(UIView*)cellContentView];
 
 }
+
 @end

@@ -14,7 +14,12 @@ typedef void (^ClickBlock)(id data);
 
 @property(nonatomic, assign) CGFloat cellHeight;
 @property(nonatomic, copy) ClickBlock block;
+
+@required
 - (void)setData:(id)data cellType:(NSString*)cellType ;
+
+@optional
+- (void)didClick:(id)data;
 
 @end
 

@@ -6,6 +6,7 @@
 //
 
 #import "HorizontalSTD.h"
+#import "VODViewController.h"
 
 static const float spacing = 5;
 static const float imageHeight = 200;

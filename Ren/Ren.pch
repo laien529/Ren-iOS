@@ -13,6 +13,11 @@
 #import "Masonry.h"
 #import "YYKit.h"
 
+static inline UINavigationController* RenNavigationController(UIViewController* viewController) {
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    return nav;
+};
+
 #define kRenScreenWidth MIN(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
 #define kRenScreenHeight MAX(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
 

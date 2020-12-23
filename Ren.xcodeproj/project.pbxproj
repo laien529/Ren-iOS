@@ -53,6 +53,12 @@
 		4814AA542589A6CC007D4136 /* FeedDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA532589A6CC007D4136 /* FeedDataModel.m */; };
 		48540AC5258CAE8F00FF935A /* RenNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AC4258CAE8F00FF935A /* RenNavigationBar.m */; };
 		48540ACF258CB58200FF935A /* RenScaffold.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540ACE258CB58200FF935A /* RenScaffold.m */; };
+		48540AD92592F1C500FF935A /* VODViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AD82592F1C500FF935A /* VODViewController.m */; };
+		48540AE02592F22400FF935A /* VODControlViewH.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540ADF2592F22400FF935A /* VODControlViewH.m */; };
+		48540AE82592F5D700FF935A /* VODPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AE72592F5D700FF935A /* VODPlayerView.m */; };
+		48540AED2592F60900FF935A /* VODBarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AEC2592F60900FF935A /* VODBarrageView.m */; };
+		48540AF425931B7400FF935A /* VODControlViewV.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AF325931B7400FF935A /* VODControlViewV.m */; };
+		48540AFE2593913700FF935A /* NativePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AFD2593913700FF935A /* NativePlayer.m */; };
 		48A62C1C258C4016003828F5 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; };
 		48A62C1F258C4047003828F5 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48A62C27258C9BA5003828F5 /* RenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A62C26258C9BA5003828F5 /* RenTableViewCell.m */; };
@@ -292,6 +298,19 @@
 		48540AC4258CAE8F00FF935A /* RenNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenNavigationBar.m; sourceTree = "<group>"; };
 		48540ACD258CB58200FF935A /* RenScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenScaffold.h; sourceTree = "<group>"; };
 		48540ACE258CB58200FF935A /* RenScaffold.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenScaffold.m; sourceTree = "<group>"; };
+		48540AD72592F1C500FF935A /* VODViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODViewController.h; sourceTree = "<group>"; };
+		48540AD82592F1C500FF935A /* VODViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODViewController.m; sourceTree = "<group>"; };
+		48540ADE2592F22400FF935A /* VODControlViewH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODControlViewH.h; sourceTree = "<group>"; };
+		48540ADF2592F22400FF935A /* VODControlViewH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODControlViewH.m; sourceTree = "<group>"; };
+		48540AE32592F31400FF935A /* PlayerControlLayerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerControlLayerProtocol.h; sourceTree = "<group>"; };
+		48540AE62592F5D700FF935A /* VODPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODPlayerView.h; sourceTree = "<group>"; };
+		48540AE72592F5D700FF935A /* VODPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODPlayerView.m; sourceTree = "<group>"; };
+		48540AEB2592F60900FF935A /* VODBarrageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODBarrageView.h; sourceTree = "<group>"; };
+		48540AEC2592F60900FF935A /* VODBarrageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODBarrageView.m; sourceTree = "<group>"; };
+		48540AF225931B7400FF935A /* VODControlViewV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODControlViewV.h; sourceTree = "<group>"; };
+		48540AF325931B7400FF935A /* VODControlViewV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODControlViewV.m; sourceTree = "<group>"; };
+		48540AFC2593913700FF935A /* NativePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativePlayer.h; sourceTree = "<group>"; };
+		48540AFD2593913700FF935A /* NativePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativePlayer.m; sourceTree = "<group>"; };
 		48A62C25258C9BA5003828F5 /* RenTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTableViewCell.h; sourceTree = "<group>"; };
 		48A62C26258C9BA5003828F5 /* RenTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTableViewCell.m; sourceTree = "<group>"; };
 		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
@@ -638,9 +657,11 @@
 		4814A8C82587077C007D4136 /* BussinessComs */ = {
 			isa = PBXGroup;
 			children = (
+				48540AD62592F1AD00FF935A /* VOD */,
 				4814AA432589A53E007D4136 /* Feed */,
 				B023797325876D99008E03B4 /* Configs */,
 				4814A8C9258707A5007D4136 /* Oauth */,
+				48540AE32592F31400FF935A /* PlayerControlLayerProtocol.h */,
 			);
 			path = BussinessComs;
 			sourceTree = "<group>";
@@ -909,6 +930,25 @@
 				48540ACE258CB58200FF935A /* RenScaffold.m */,
 			);
 			path = Scraffold;
+			sourceTree = "<group>";
+		};
+		48540AD62592F1AD00FF935A /* VOD */ = {
+			isa = PBXGroup;
+			children = (
+				48540AEB2592F60900FF935A /* VODBarrageView.h */,
+				48540AEC2592F60900FF935A /* VODBarrageView.m */,
+				48540ADE2592F22400FF935A /* VODControlViewH.h */,
+				48540ADF2592F22400FF935A /* VODControlViewH.m */,
+				48540AF225931B7400FF935A /* VODControlViewV.h */,
+				48540AF325931B7400FF935A /* VODControlViewV.m */,
+				48540AE62592F5D700FF935A /* VODPlayerView.h */,
+				48540AE72592F5D700FF935A /* VODPlayerView.m */,
+				48540AD72592F1C500FF935A /* VODViewController.h */,
+				48540AD82592F1C500FF935A /* VODViewController.m */,
+				48540AFC2593913700FF935A /* NativePlayer.h */,
+				48540AFD2593913700FF935A /* NativePlayer.m */,
+			);
+			path = VOD;
 			sourceTree = "<group>";
 		};
 		48A62C24258C979A003828F5 /* Template */ = {
@@ -1494,6 +1534,7 @@
 				B023793725876A1A008E03B4 /* NSAttributedString+YYText.m in Sources */,
 				B023794325876A1A008E03B4 /* UIScreen+YYAdd.m in Sources */,
 				B023794725876A1A008E03B4 /* UIImage+YYAdd.m in Sources */,
+				48540AF425931B7400FF935A /* VODControlViewV.m in Sources */,
 				B023795E25876A1A008E03B4 /* YYTransaction.m in Sources */,
 				B023791A25876A1A008E03B4 /* YYWebImageManager.m in Sources */,
 				48DD1380258B76960000FC2D /* FeedFlowCellFactory.m in Sources */,
@@ -1523,6 +1564,7 @@
 				4814A9652588A5A5007D4136 /* UITableView+SCIndexView.m in Sources */,
 				B06CB0BE2589E87E0085F586 /* HorizontalSTD.m in Sources */,
 				B023793D25876A1A008E03B4 /* UIBezierPath+YYAdd.m in Sources */,
+				48540AED2592F60900FF935A /* VODBarrageView.m in Sources */,
 				4814A8F725870DA2007D4136 /* UIProgressView+AFNetworking.m in Sources */,
 				B023795F25876A1A008E03B4 /* YYDispatchQueuePool.m in Sources */,
 				B023791D25876A1A008E03B4 /* YYImageCoder.m in Sources */,
@@ -1536,13 +1578,16 @@
 				4814A9F62588C82E007D4136 /* FMDatabase.m in Sources */,
 				48DD13732589FB8A0000FC2D /* MASViewConstraint.m in Sources */,
 				B023798225884468008E03B4 /* SDKConfigDataSource.m in Sources */,
+				48540AFE2593913700FF935A /* NativePlayer.m in Sources */,
 				4814A8FE25870DA2007D4136 /* AFAutoPurgingImageCache.m in Sources */,
+				48540AE02592F22400FF935A /* VODControlViewH.m in Sources */,
 				4814A90425870DA2007D4136 /* AFNetworkReachabilityManager.m in Sources */,
 				B023795725876A1A008E03B4 /* NSObject+YYAddForKVO.m in Sources */,
 				4814AA4D2589A673007D4136 /* FeedDataSource.m in Sources */,
 				4814A9F82588C82E007D4136 /* FMResultSet.m in Sources */,
 				B023794A25876A1A008E03B4 /* NSArray+YYAdd.m in Sources */,
 				4814AA462589A5C3007D4136 /* FeedFlowViewController.m in Sources */,
+				48540AE82592F5D700FF935A /* VODPlayerView.m in Sources */,
 				4814A8A925836C0F007D4136 /* UGCViewController.m in Sources */,
 				4814A8F825870DA2007D4136 /* UIRefreshControl+AFNetworking.m in Sources */,
 				48DD136C2589FB8A0000FC2D /* ViewController+MASAdditions.m in Sources */,
@@ -1581,6 +1626,7 @@
 				4814A90525870DA2007D4136 /* AFSecurityPolicy.m in Sources */,
 				B023791B25876A1A008E03B4 /* YYSpriteSheetImage.m in Sources */,
 				B023795525876A1A008E03B4 /* NSNotificationCenter+YYAdd.m in Sources */,
+				48540AD92592F1C500FF935A /* VODViewController.m in Sources */,
 				4814A90025870DA2007D4136 /* AFURLResponseSerialization.m in Sources */,
 				B023794E25876A1A008E03B4 /* NSData+YYAdd.m in Sources */,
 				B023794D25876A1A008E03B4 /* NSObject+YYAdd.m in Sources */,

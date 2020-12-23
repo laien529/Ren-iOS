@@ -6,6 +6,7 @@
 //
 
 #import "RenTableViewController.h"
+#import "VODViewController.h"
 
 @interface RenTableViewController ()
 
@@ -48,6 +49,8 @@
     if (cell.block) {
         cell.block(moduleData);
     }
-
+    VODViewController *vc = [[VODViewController alloc] initWithVertical];
+    [vc hidesBottomBarWhenPushed];
+    [self.parentViewController.navigationController pushViewController:vc animated:YES];
 }
 @end
