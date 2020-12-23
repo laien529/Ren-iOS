@@ -8,6 +8,8 @@
 #import "FeedFlowViewController.h"
 #import "FeedDataSource.h"
 #import "HorizontalSTD.h"
+#import "RenScaffold.h"
+#import "RenNavigationBar.h"
 
 @interface FeedFlowViewController ()
 
@@ -21,23 +23,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _dataSource = [[FeedDataSource alloc] init];
     
+    RenScaffold *scraffold = [[RenScaffold alloc] init];
+    [scraffold setNavigationBar:[[RenNavigationBar alloc] init]];    
+    _dataSource = [[FeedDataSource alloc] init];
     _tableViewController = [[RenTableViewController alloc] init];
     [self addChildViewController:_tableViewController];
-    [self.view addSubview:_tableViewController.view];
-    _tableViewController.renDataSource = _dataSource;
-    [_tableViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view);
-        make.leading.mas_equalTo(self.view);
-        make.trailing.mas_equalTo(self.view);
-        make.width.mas_equalTo(self.view);
-        make.height.mas_equalTo(self.view);
+    [scraffold setContentView:_tableViewController.view];
+    [self.view addSubview:scraffold];
 
-    }];
+    _tableViewController.renDataSource = _dataSource;
+//    [_tableViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(self.view);
+//        make.leading.mas_equalTo(self.view);
+//        make.trailing.mas_equalTo(self.view);
+//        make.width.mas_equalTo(self.view);
+//        make.height.mas_equalTo(self.view);
+//
+//    }];
     _tableViewController.view.backgroundColor = UIColor.whiteColor;
   
-    _stackView = [[UIStackView alloc] initWithFrame:self.view.frame];
+//    _stackView = [[UIStackView alloc] initWithFrame:self.view.frame];
 
 //    
 //    [_stackView mas_makeConstraints:^(MASConstraintMaker *make) {

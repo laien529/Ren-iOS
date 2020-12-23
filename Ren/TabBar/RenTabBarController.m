@@ -9,12 +9,6 @@
 #import "RenTabBarItem.h"
 
 
-#define statusBarHeight CGRectGetHeight(UIApplication.sharedApplication.statusBarFrame)
-
-#define tabBarHeight (statusBarHeight == 20 ? 49 : 83)
-
-#define safeBottomHeight 34
-
 @interface RenTabBarController ()<RenTabBarDelegate, UITabBarControllerDelegate, UIViewControllerAnimatedTransitioning> {
     NSMutableArray *tabBarConfigArray;
     NSMutableArray *tabBarItemArray;

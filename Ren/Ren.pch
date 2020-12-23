@@ -14,6 +14,12 @@
 #import "YYKit.h"
 
 #define kRenScreenWidth MIN(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
-#define kRenScreenHeight MIN(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
+#define kRenScreenHeight MAX(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)
+
+#define statusBarHeight CGRectGetHeight(UIApplication.sharedApplication.statusBarFrame)
+
+#define tabBarHeight (statusBarHeight == 20 ? 49 : 83)
+
+#define safeBottomHeight 34
 
 #endif /* Ren_pch */

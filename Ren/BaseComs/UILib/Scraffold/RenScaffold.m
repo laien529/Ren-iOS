@@ -20,7 +20,7 @@
 - (instancetype)init {
     self = [super initWithFrame:CGRectMake(0, 0, kRenScreenWidth, kRenScreenHeight)];
     if (self) {
-    
+        bottomBaseLineY = kRenScreenHeight - tabbarHeight;
     }
     return self;
 }
@@ -28,16 +28,17 @@
 - (void)setContentView:(UIView *)contentView {
     
     _contentView = contentView;
-    
+    [self addSubview:_contentView];
+
 }
 
-- (void)setNavigatonBar:(RenNavigationBar*)navigationBar {
-//    if (isNotchScreen()) {
-//        
-//    } else {
-//        
-//    }
-//    
+- (void)setNavigationBar:(RenNavigationBar*)navigationBar {
+    if (!_navigationBar) {
+        _navigationBar = navigationBar;
+        [self addSubview:_navigationBar];
+    } else {
+        _navigationBar = navigationBar;
+    }
 }
 
 - (void)setTabbarHeight:(CGFloat)tabbarHeight {
@@ -46,6 +47,7 @@
 
 - (void)layoutSubviews {
     topBaseLineY = CGRectGetMaxY(_navigationBar.frame);
-
+    self.frame = CGRectMake(0, 0, kRenScreenWidth, bottomBaseLineY);
+    _contentView.frame = CGRectMake(0, topBaseLineY, kRenScreenWidth, bottomBaseLineY - topBaseLineY);
 }
 @end
