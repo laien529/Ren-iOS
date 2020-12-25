@@ -13,7 +13,7 @@
 #import "VODBarrageView.h"
 #import "SeekIndicator.h"
 
-@interface VODViewController ()<RenPlayerProtocol> {
+@interface VODViewController ()<RenPlayerDelegate> {
     PlayerGestureLayer *_gestureLayer;
     VODControlViewH *_controlViewH;
     VODControlViewV *_controlViewV;
@@ -21,6 +21,8 @@
     VODBarrageView *_barrageView;
     SeekIndicator *_seekIndicator;
     BOOL _isHorizontal;
+    NSInteger _currentTime;
+    NSInteger _duration;
 
 }
 
@@ -59,7 +61,7 @@
 - (SeekIndicator*)seekIndicator {
     if (!_seekIndicator) {
         _seekIndicator = [[SeekIndicator alloc] init];
-        _seekIndicator.totalDuraion = 200;
+        _seekIndicator.totalDuraion = 0;
 
         [self.view addSubview:_seekIndicator];
         [_seekIndicator mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -67,6 +69,7 @@
             make.width.equalTo(@300);
             make.height.equalTo(@150);
         }];
+        _seekIndicator.hidden = YES;
     }
     return _seekIndicator;
 }
@@ -101,6 +104,7 @@
 //                [invocation invoke];
 //            }
 //}
+
 #pragma mark- --LifeStyle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -114,6 +118,7 @@
         playerFrame = CGRectMake(0, 44, kRenScreenWidth, 250);
     }
     _playerView = [[VODPlayerView alloc] initWithFrame:playerFrame];
+    _playerView.player.delegate = self;
     [self.view addSubview:_playerView];
     
     _gestureLayer = [[PlayerGestureLayer alloc] initWithFrame:_playerView.frame];
@@ -145,14 +150,12 @@
         make.trailing.equalTo(_playerView);
         make.top.equalTo(_playerView);
         make.bottom.equalTo(_playerView);
-
     }];
     [_barrageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(_playerView);
         make.trailing.equalTo(_playerView);
         make.top.equalTo(_playerView);
         make.bottom.equalTo(_playerView);
-
     }];
     if (_controlViewV) {
         [_controlViewV mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -160,7 +163,6 @@
             make.trailing.equalTo(_playerView);
             make.top.equalTo(_playerView);
             make.bottom.equalTo(_playerView);
-
         }];
     }
     if (_controlViewH) {
@@ -169,11 +171,9 @@
             make.trailing.equalTo(_playerView);
             make.top.equalTo(_playerView);
             make.bottom.equalTo(_playerView);
-
         }];
     }
 }
-
 
 #pragma mark- --PlayerControlLayerProtocol
 - (void)back {
@@ -191,6 +191,7 @@
 - (void)volumeDown:(CGFloat)down {
     
 }
+
 - (void)lightUp:(CGFloat)up {
     
 }
@@ -201,25 +202,38 @@
 
 - (void)seekForward:(NSInteger)duration {
     _seekIndicator.hidden = NO;
-    self.seekIndicator.targetDuraion = duration;
+    self.seekIndicator.targetDuraion = duration + _currentTime;
 }
 
 - (void)seekBackward:(NSInteger)duration {
     _seekIndicator.hidden = NO;
-    self.seekIndicator.targetDuraion = duration;
+    self.seekIndicator.targetDuraion = MAX(0, (duration + _currentTime));
 }
 
 - (void)gestureEnd {
     _seekIndicator.hidden = YES;
+    [_playerView.player.avPlayer seekToTime:CMTimeMake(self.seekIndicator.targetDuraion, 1)];
 }
 
 #pragma mark- --RenPlayerProtocol
 - (void)player:(id<RenPlayerProtocol>)player from:(RenPlayerStatus)from to:(RenPlayerStatus)to {
+    if (_seekIndicator.totalDuraion == 0) {
+        if (to == RenPlayerStatusReadyToPlay) {
+            self.seekIndicator.totalDuraion = _playerView.player.playerItem.duration.value / _playerView.player.playerItem.duration.timescale;
+        }
+    }
     
+}
+
+- (void)player:(id<RenPlayerProtocol>)player intervalCurrentTime:(NSInteger)currentTime totalDuration:(NSInteger)totalDuration {
+    _currentTime = currentTime;
+    _duration = totalDuration;
+    NSLog(@"currentTime:%zd; totalDuration:%zd",currentTime, totalDuration);
 }
 
 #pragma mark- --dealloc
 - (void)dealloc {
     
 }
+
 @end

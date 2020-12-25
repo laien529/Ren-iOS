@@ -6,18 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RenPlayerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, RenPlayerStatus) {
-    RenPlayerStatusPause,
-    RenPlayerStatusReadyToPlay,
-    RenPlayerStatusPlaying
-};
-
 @protocol RenPlayerProtocol <NSObject>
 
-- (void)player:(id<RenPlayerProtocol>)player from:(RenPlayerStatus)from to:(RenPlayerStatus)to;
+@property(nonatomic, weak) id<RenPlayerDelegate> delegate;
 
 @end
 

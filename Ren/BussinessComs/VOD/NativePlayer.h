@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)AVPlayer *avPlayer;
 @property(nonatomic, strong)AVPlayerLayer *playerLayer;
 @property(nonatomic, strong)AVPlayerItem *playerItem;
+@property(nonatomic, weak)id<RenPlayerDelegate> delegate;
 - (instancetype)initWithUrl:(NSString*)url;
 @end
 
