@@ -51,6 +51,7 @@
 		4814AA462589A5C3007D4136 /* FeedFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA452589A5C3007D4136 /* FeedFlowViewController.m */; };
 		4814AA4D2589A673007D4136 /* FeedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA4C2589A673007D4136 /* FeedDataSource.m */; };
 		4814AA542589A6CC007D4136 /* FeedDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814AA532589A6CC007D4136 /* FeedDataModel.m */; };
+		4850C13C2595C7300066BB01 /* SeekIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4850C13B2595C7300066BB01 /* SeekIndicator.m */; };
 		48540AC5258CAE8F00FF935A /* RenNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AC4258CAE8F00FF935A /* RenNavigationBar.m */; };
 		48540ACF258CB58200FF935A /* RenScaffold.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540ACE258CB58200FF935A /* RenScaffold.m */; };
 		48540AD92592F1C500FF935A /* VODViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AD82592F1C500FF935A /* VODViewController.m */; };
@@ -59,6 +60,7 @@
 		48540AED2592F60900FF935A /* VODBarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AEC2592F60900FF935A /* VODBarrageView.m */; };
 		48540AF425931B7400FF935A /* VODControlViewV.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AF325931B7400FF935A /* VODControlViewV.m */; };
 		48540AFE2593913700FF935A /* NativePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540AFD2593913700FF935A /* NativePlayer.m */; };
+		48540B0325942E3500FF935A /* PlayerGestureLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48540B0225942E3500FF935A /* PlayerGestureLayer.m */; };
 		48A62C1C258C4016003828F5 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; };
 		48A62C1F258C4047003828F5 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48A62C27258C9BA5003828F5 /* RenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A62C26258C9BA5003828F5 /* RenTableViewCell.m */; };
@@ -294,6 +296,8 @@
 		4814AA4C2589A673007D4136 /* FeedDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedDataSource.m; sourceTree = "<group>"; };
 		4814AA522589A6CC007D4136 /* FeedDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedDataModel.h; sourceTree = "<group>"; };
 		4814AA532589A6CC007D4136 /* FeedDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedDataModel.m; sourceTree = "<group>"; };
+		4850C13A2595C7300066BB01 /* SeekIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeekIndicator.h; sourceTree = "<group>"; };
+		4850C13B2595C7300066BB01 /* SeekIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeekIndicator.m; sourceTree = "<group>"; };
 		48540AC3258CAE8F00FF935A /* RenNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenNavigationBar.h; sourceTree = "<group>"; };
 		48540AC4258CAE8F00FF935A /* RenNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenNavigationBar.m; sourceTree = "<group>"; };
 		48540ACD258CB58200FF935A /* RenScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenScaffold.h; sourceTree = "<group>"; };
@@ -311,6 +315,8 @@
 		48540AF325931B7400FF935A /* VODControlViewV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODControlViewV.m; sourceTree = "<group>"; };
 		48540AFC2593913700FF935A /* NativePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativePlayer.h; sourceTree = "<group>"; };
 		48540AFD2593913700FF935A /* NativePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativePlayer.m; sourceTree = "<group>"; };
+		48540B0125942E3500FF935A /* PlayerGestureLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerGestureLayer.h; sourceTree = "<group>"; };
+		48540B0225942E3500FF935A /* PlayerGestureLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerGestureLayer.m; sourceTree = "<group>"; };
 		48A62C25258C9BA5003828F5 /* RenTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTableViewCell.h; sourceTree = "<group>"; };
 		48A62C26258C9BA5003828F5 /* RenTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTableViewCell.m; sourceTree = "<group>"; };
 		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
@@ -661,7 +667,6 @@
 				4814AA432589A53E007D4136 /* Feed */,
 				B023797325876D99008E03B4 /* Configs */,
 				4814A8C9258707A5007D4136 /* Oauth */,
-				48540AE32592F31400FF935A /* PlayerControlLayerProtocol.h */,
 			);
 			path = BussinessComs;
 			sourceTree = "<group>";
@@ -935,6 +940,7 @@
 		48540AD62592F1AD00FF935A /* VOD */ = {
 			isa = PBXGroup;
 			children = (
+				48540AE32592F31400FF935A /* PlayerControlLayerProtocol.h */,
 				48540AEB2592F60900FF935A /* VODBarrageView.h */,
 				48540AEC2592F60900FF935A /* VODBarrageView.m */,
 				48540ADE2592F22400FF935A /* VODControlViewH.h */,
@@ -947,6 +953,10 @@
 				48540AD82592F1C500FF935A /* VODViewController.m */,
 				48540AFC2593913700FF935A /* NativePlayer.h */,
 				48540AFD2593913700FF935A /* NativePlayer.m */,
+				48540B0125942E3500FF935A /* PlayerGestureLayer.h */,
+				48540B0225942E3500FF935A /* PlayerGestureLayer.m */,
+				4850C13A2595C7300066BB01 /* SeekIndicator.h */,
+				4850C13B2595C7300066BB01 /* SeekIndicator.m */,
 			);
 			path = VOD;
 			sourceTree = "<group>";
@@ -1583,6 +1593,7 @@
 				48540AE02592F22400FF935A /* VODControlViewH.m in Sources */,
 				4814A90425870DA2007D4136 /* AFNetworkReachabilityManager.m in Sources */,
 				B023795725876A1A008E03B4 /* NSObject+YYAddForKVO.m in Sources */,
+				48540B0325942E3500FF935A /* PlayerGestureLayer.m in Sources */,
 				4814AA4D2589A673007D4136 /* FeedDataSource.m in Sources */,
 				4814A9F82588C82E007D4136 /* FMResultSet.m in Sources */,
 				B023794A25876A1A008E03B4 /* NSArray+YYAdd.m in Sources */,
@@ -1613,6 +1624,7 @@
 				B023794525876A1A008E03B4 /* UIBarButtonItem+YYAdd.m in Sources */,
 				B023795625876A1A008E03B4 /* NSDictionary+YYAdd.m in Sources */,
 				4814A8FB25870DA2007D4136 /* UIImageView+AFNetworking.m in Sources */,
+				4850C13C2595C7300066BB01 /* SeekIndicator.m in Sources */,
 				B023792325876A1A008E03B4 /* CALayer+YYWebImage.m in Sources */,
 				B023793325876A1A008E03B4 /* YYTextRunDelegate.m in Sources */,
 				4814A8A025836BF5007D4136 /* HomeViewController.m in Sources */,

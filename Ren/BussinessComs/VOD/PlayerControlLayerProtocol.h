@@ -18,8 +18,17 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (void)more;
 
-- (void)seekTo:(NSInteger)duration;
+- (void)seekForward:(NSInteger)duration;
+- (void)seekBackward:(NSInteger)duration;
 - (void)next;
+
+- (void)volumeUp:(CGFloat)up;
+- (void)volumeDown:(CGFloat)down;
+
+- (void)lightUp:(CGFloat)up;
+- (void)lightDown:(CGFloat)down;
+
+- (void)gestureEnd;
 
 @end
 

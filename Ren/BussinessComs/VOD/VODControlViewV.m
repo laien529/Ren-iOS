@@ -23,7 +23,7 @@ const static NSInteger kAreaHeight = 44;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.frame = CGRectMake(0, 44, kRenScreenWidth, 250);
+        self.frame = CGRectMake(0, 0, kRenScreenWidth, 250);
         [self setupBackButton];
         [self setupTopArea];
         [self setupBottomArea];
@@ -116,5 +116,17 @@ const static NSInteger kAreaHeight = 44;
     if (self.delegate && [self.delegate respondsToSelector:@selector(back)]) {
         [self.delegate back];
     }
+}
+
+-  (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
 }
 @end

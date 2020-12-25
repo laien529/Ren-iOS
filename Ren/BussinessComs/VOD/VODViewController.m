@@ -6,16 +6,20 @@
 //
 
 #import "VODViewController.h"
+#import "PlayerGestureLayer.h"
 #import "VODControlViewH.h"
 #import "VODControlViewV.h"
 #import "VODPlayerView.h"
 #import "VODBarrageView.h"
+#import "SeekIndicator.h"
 
 @interface VODViewController () {
+    PlayerGestureLayer *_gestureLayer;
     VODControlViewH *_controlViewH;
     VODControlViewV *_controlViewV;
     VODPlayerView *_playerView;
     VODBarrageView *_barrageView;
+    SeekIndicator *_seekIndicator;
     BOOL _isHorizontal;
 
 }
@@ -24,13 +28,13 @@
 
 @implementation VODViewController
 
+#pragma mark- --setupViews
 - (instancetype)initWithVertical {
     self = [super init];
     if (self) {
         _controlViewV = [[VODControlViewV alloc] init];
         _controlViewV.delegate = self;
         _isHorizontal = NO;
-        self.view.backgroundColor = [UIColor blackColor];
     }
     return self;
 }
@@ -41,7 +45,6 @@
         _controlViewH = [[VODControlViewH alloc] init];
         _controlViewH.delegate = self;
         _isHorizontal = YES;
-        self.view.backgroundColor = [UIColor blackColor];
 //        CGFloat duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
 //
 //        [[UIApplication sharedApplication] setStatusBarOrientation:UIDeviceOrientationLandscapeRight animated:YES];
@@ -52,9 +55,27 @@
     }
     return self;
 }
+
+- (SeekIndicator*)seekIndicator {
+    if (!_seekIndicator) {
+        _seekIndicator = [[SeekIndicator alloc] init];
+        _seekIndicator.totalDuraion = 200;
+
+        [self.view addSubview:_seekIndicator];
+        [_seekIndicator mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(_playerView);
+            make.width.equalTo(@300);
+            make.height.equalTo(@150);
+        }];
+    }
+    return _seekIndicator;
+}
+
+#pragma mark- --rotate
 - (BOOL)shouldAutorotate {
     return YES;
 }
+
 - (void)setInterfaceOrientation:(UIInterfaceOrientation*)orientation {
     if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
         SEL selector = NSSelectorFromString(@"setOrientation:");
@@ -80,41 +101,50 @@
 //                [invocation invoke];
 //            }
 //}
-
+#pragma mark- --LifeStyle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor blackColor];
+
     CGRect playerFrame = CGRectZero;
     if (_isHorizontal) {
-        playerFrame = CGRectMake(0, 0, kRenScreenHeight, kRenScreenWidth);
+        playerFrame = CGRectMake(0, 44, kRenScreenHeight, kRenScreenWidth);
     } else {
-        playerFrame = CGRectMake(0, 0, kRenScreenWidth, 250);
+        playerFrame = CGRectMake(0, 44, kRenScreenWidth, 250);
     }
     _playerView = [[VODPlayerView alloc] initWithFrame:playerFrame];
     [self.view addSubview:_playerView];
     
+    _gestureLayer = [[PlayerGestureLayer alloc] initWithFrame:_playerView.frame];
+    _gestureLayer.delegate = self;
+    [_playerView addSubview:_gestureLayer];
+    
     _barrageView = [[VODBarrageView alloc] initWithFrame:_isHorizontal ? _controlViewH.frame : _controlViewV.frame];
-    [self.view addSubview:_barrageView];
+    [_gestureLayer addSubview:_barrageView];
     
     if (_controlViewV) {
-        [self.view addSubview:_controlViewV];
+        [_barrageView addSubview:_controlViewV];
     }
     if (_controlViewH) {
         [self.view addSubview:_controlViewH];
     }
 }
+
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-//    [_playerView play];
+
 }
+
 - (void)viewWillLayoutSubviews {
     
 }
 
+
+#pragma mark- --PlayerControlLayerProtocol
 - (void)back {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -123,6 +153,35 @@
     [_playerView play];
 }
 
+- (void)volumeUp:(CGFloat)up {
+    
+}
+
+- (void)volumeDown:(CGFloat)down {
+    
+}
+- (void)lightUp:(CGFloat)up {
+    
+}
+
+- (void)lightDown:(CGFloat)down {
+    
+}
+
+- (void)seekForward:(NSInteger)duration {
+    _seekIndicator.hidden = NO;
+    self.seekIndicator.targetDuraion = duration;
+}
+
+- (void)seekBackward:(NSInteger)duration {
+    _seekIndicator.hidden = NO;
+    self.seekIndicator.targetDuraion = duration;
+}
+
+- (void)gestureEnd {
+    _seekIndicator.hidden = YES;
+}
+#pragma mark- --dealloc
 - (void)dealloc {
     
 }

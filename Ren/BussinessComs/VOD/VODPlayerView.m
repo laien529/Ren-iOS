@@ -20,6 +20,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self  = [super initWithFrame:frame];
     if (self) {
+//        self.userInteractionEnabled = NO;
         _player = [[NativePlayer alloc] initWithUrl:@"http://gslb.miaopai.com/stream/oxX3t3Vm5XPHKUeTS-zbXA__.mp4"];
         _player.playerLayer.frame = frame;
         [self.layer addSublayer:_player.playerLayer];
