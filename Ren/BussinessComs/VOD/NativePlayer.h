@@ -7,10 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "RenPlayerProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NativePlayer : NSObject
+@interface NativePlayer : NSObject<RenPlayerProtocol>
 
 @property(nonatomic, strong)AVPlayer *avPlayer;
 @property(nonatomic, strong)AVPlayerLayer *playerLayer;

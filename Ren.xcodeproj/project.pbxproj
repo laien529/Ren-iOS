@@ -298,6 +298,7 @@
 		4814AA532589A6CC007D4136 /* FeedDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedDataModel.m; sourceTree = "<group>"; };
 		4850C13A2595C7300066BB01 /* SeekIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeekIndicator.h; sourceTree = "<group>"; };
 		4850C13B2595C7300066BB01 /* SeekIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeekIndicator.m; sourceTree = "<group>"; };
+		4850C13F2595F5910066BB01 /* RenPlayerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenPlayerProtocol.h; sourceTree = "<group>"; };
 		48540AC3258CAE8F00FF935A /* RenNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenNavigationBar.h; sourceTree = "<group>"; };
 		48540AC4258CAE8F00FF935A /* RenNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenNavigationBar.m; sourceTree = "<group>"; };
 		48540ACD258CB58200FF935A /* RenScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenScaffold.h; sourceTree = "<group>"; };
@@ -957,6 +958,7 @@
 				48540B0225942E3500FF935A /* PlayerGestureLayer.m */,
 				4850C13A2595C7300066BB01 /* SeekIndicator.h */,
 				4850C13B2595C7300066BB01 /* SeekIndicator.m */,
+				4850C13F2595F5910066BB01 /* RenPlayerProtocol.h */,
 			);
 			path = VOD;
 			sourceTree = "<group>";

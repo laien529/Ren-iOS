@@ -13,7 +13,7 @@
 #import "VODBarrageView.h"
 #import "SeekIndicator.h"
 
-@interface VODViewController () {
+@interface VODViewController ()<RenPlayerProtocol> {
     PlayerGestureLayer *_gestureLayer;
     VODControlViewH *_controlViewH;
     VODControlViewV *_controlViewV;
@@ -140,7 +140,38 @@
 }
 
 - (void)viewWillLayoutSubviews {
-    
+    [_gestureLayer mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(_playerView);
+        make.trailing.equalTo(_playerView);
+        make.top.equalTo(_playerView);
+        make.bottom.equalTo(_playerView);
+
+    }];
+    [_barrageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(_playerView);
+        make.trailing.equalTo(_playerView);
+        make.top.equalTo(_playerView);
+        make.bottom.equalTo(_playerView);
+
+    }];
+    if (_controlViewV) {
+        [_controlViewV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(_playerView);
+            make.trailing.equalTo(_playerView);
+            make.top.equalTo(_playerView);
+            make.bottom.equalTo(_playerView);
+
+        }];
+    }
+    if (_controlViewH) {
+        [_controlViewH mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(_playerView);
+            make.trailing.equalTo(_playerView);
+            make.top.equalTo(_playerView);
+            make.bottom.equalTo(_playerView);
+
+        }];
+    }
 }
 
 
@@ -181,6 +212,12 @@
 - (void)gestureEnd {
     _seekIndicator.hidden = YES;
 }
+
+#pragma mark- --RenPlayerProtocol
+- (void)player:(id<RenPlayerProtocol>)player from:(RenPlayerStatus)from to:(RenPlayerStatus)to {
+    
+}
+
 #pragma mark- --dealloc
 - (void)dealloc {
     

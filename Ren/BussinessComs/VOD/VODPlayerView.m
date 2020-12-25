@@ -22,7 +22,7 @@
     if (self) {
 //        self.userInteractionEnabled = NO;
         _player = [[NativePlayer alloc] initWithUrl:@"http://gslb.miaopai.com/stream/oxX3t3Vm5XPHKUeTS-zbXA__.mp4"];
-        _player.playerLayer.frame = frame;
+        _player.playerLayer.frame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
         [self.layer addSublayer:_player.playerLayer];
     }
     return self;;
