@@ -73,24 +73,27 @@
         NSLog(@"preTime:%f", [preTime timeIntervalSince1970]);
         NSLog(@"now:%f", [now timeIntervalSince1970]);
 
+        objc_setAssociatedObject(dataTask, "startTime", nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        
         if (startTime) { //httprtt
             NSTimeInterval httprtt = [now timeIntervalSinceDate:startTime];
             NSLog(@"httprtt: %f, %@", httprtt,  dataTask.currentRequest.URL.absoluteURL.path);
-            objc_setAssociatedObject(dataTask, "startTime", nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
         }
         if (preTime) { //throughput
             NSTimeInterval duration = [now timeIntervalSinceDate:preTime];
             NSLog(@"receive interval: %f,  throughput: %.2f KB, %@", duration, data.length / 1024.0f / duration,  dataTask.currentRequest.URL.absoluteURL.path );
             objc_setAssociatedObject(dataTask, "preTime", now, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-            NSLog(@"%@", @"*1");
+            NSLog(@"%@", @"continue receive *****************");
         } else {
             objc_setAssociatedObject(dataTask, "preTime", now, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-            NSLog(@"%@", @"*2");
+            NSLog(@"%@", @"start receive *****************");
 
         }
-        NSLog(@"%@", @"*****************");
 
+    }];
+    [_sessionManager setTaskDidFinishCollectingMetricsBlock:^(NSURLSession * _Nonnull session, NSURLSessionTask * _Nonnull task, NSURLSessionTaskMetrics * _Nullable metrics) {
+            
     }];
     objc_setAssociatedObject(task, "startTime", [NSDate date], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 

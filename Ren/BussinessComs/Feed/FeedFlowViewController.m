@@ -23,38 +23,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    CGFloat top =  self.topLayoutGuide.length;
+    if (@available(iOS 11.0, *)) {
+        CGFloat safeTop = self.view.safeAreaLayoutGuide.layoutFrame.origin.y;
+    } else {
+        // Fallback on earlier versions
+    }
+    [self.navigationController setNavigationBarHidden:YES];
     RenScaffold *scraffold = [[RenScaffold alloc] init];
     [scraffold setNavigationBar:[[RenNavigationBar alloc] init]];    
     _dataSource = [[FeedDataSource alloc] init];
     _tableViewController = [[RenTableViewController alloc] init];
+    _tableViewController.view.backgroundColor = UIColor.whiteColor;
     [self addChildViewController:_tableViewController];
     [scraffold setContentView:_tableViewController.view];
     [self.view addSubview:scraffold];
 
     _tableViewController.renDataSource = _dataSource;
-//    [_tableViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(self.view);
-//        make.leading.mas_equalTo(self.view);
-//        make.trailing.mas_equalTo(self.view);
-//        make.width.mas_equalTo(self.view);
-//        make.height.mas_equalTo(self.view);
-//
-//    }];
-    _tableViewController.view.backgroundColor = UIColor.whiteColor;
-  
-//    _stackView = [[UIStackView alloc] initWithFrame:self.view.frame];
 
-//    
-//    [_stackView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.width.mas_equalTo(_scrollView);
-//        make.leading.mas_equalTo(_scrollView);
-//        make.trailing.mas_equalTo(_scrollView);
-//        make.top.mas_equalTo(_scrollView);
-//        make.bottom.mas_equalTo(_scrollView);
-//
-//    }];
-    
     [self fetchFeedDatas];
 }
 
@@ -66,24 +52,7 @@
         });
     }];
 }
-/* StackView
-- (void)reloadStackViewSubs:(NSArray*)datas {
-    _stackView.axis = UILayoutConstraintAxisVertical;
-//    _stackView.alignment = UIStackViewAlignmentFill;
-    _stackView.distribution = UIStackViewDistributionFill;
-//    _stackView.translatesAutoresizingMaskIntoConstraints = NO;
-//    _stackView.spacing = 0;
-    for (ModuleData *moduleData in datas) {
-        HorizontalSTD *hView = [[HorizontalSTD alloc] init];
-        [hView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.equalTo(@(300));
-        }];
-        [hView setData:moduleData];
-        [_stackView addArrangedSubview:hView];
-      
-    }
-}
-*/
+
 - (void)addToStackViewSubs:(NSArray*)datas {
     
 }

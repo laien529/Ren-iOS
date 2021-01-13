@@ -21,6 +21,7 @@
     self = [super initWithFrame:CGRectMake(0, 0, kRenScreenWidth, kRenScreenHeight)];
     if (self) {
         bottomBaseLineY = kRenScreenHeight - tabBarHeight;
+        self.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return self;
 }
@@ -33,6 +34,7 @@
 }
 
 - (void)setNavigationBar:(RenNavigationBar*)navigationBar {
+    CGRect frame = self.safeAreaLayoutGuide.layoutFrame;
     if (!_navigationBar) {
         _navigationBar = navigationBar;
         [self addSubview:_navigationBar];

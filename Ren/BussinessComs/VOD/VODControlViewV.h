@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VODControlViewV : UIView
 @property(nonatomic, weak) id<PlayerControlLayerProtocol> delegate;
+
+- (void)setCurrentTime:(NSInteger)currentTime;
+- (void)setTotalDuration:(NSInteger)totalDuration;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,7 @@
 #import "VODPlayerView.h"
 #import "VODBarrageView.h"
 #import "SeekIndicator.h"
+#import "CastViewController.h"
 
 @interface VODViewController ()<RenPlayerDelegate> {
     PlayerGestureLayer *_gestureLayer;
@@ -211,15 +212,24 @@
 }
 
 - (void)gestureEnd {
-    _seekIndicator.hidden = YES;
-    [_playerView.player.avPlayer seekToTime:CMTimeMake(self.seekIndicator.targetDuraion, 1)];
+    if (!_seekIndicator.hidden) {
+        _seekIndicator.hidden = YES;
+        [_playerView.player.avPlayer seekToTime:CMTimeMake(self.seekIndicator.targetDuraion, 1)];
+    }
+}
+
+- (void)cast {
+    CastViewController *cast = [[CastViewController alloc] init];
+    [self.navigationController pushViewController:cast animated:YES];
 }
 
 #pragma mark- --RenPlayerProtocol
 - (void)player:(id<RenPlayerProtocol>)player from:(RenPlayerStatus)from to:(RenPlayerStatus)to {
     if (_seekIndicator.totalDuraion == 0) {
         if (to == RenPlayerStatusReadyToPlay) {
-            self.seekIndicator.totalDuraion = _playerView.player.playerItem.duration.value / _playerView.player.playerItem.duration.timescale;
+            NSInteger duration = _playerView.player.playerItem.duration.value / _playerView.player.playerItem.duration.timescale;
+            [_controlViewV setTotalDuration:duration];
+            self.seekIndicator.totalDuraion = duration;
         }
     }
     
@@ -228,6 +238,7 @@
 - (void)player:(id<RenPlayerProtocol>)player intervalCurrentTime:(NSInteger)currentTime totalDuration:(NSInteger)totalDuration {
     _currentTime = currentTime;
     _duration = totalDuration;
+    [_controlViewV setCurrentTime:currentTime];
     NSLog(@"currentTime:%zd; totalDuration:%zd",currentTime, totalDuration);
 }
 

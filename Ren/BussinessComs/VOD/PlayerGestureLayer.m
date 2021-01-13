@@ -51,7 +51,7 @@
     CGFloat pointY = point.y;
     CGFloat offSetX = pointX - _startOffsetX;
     CGFloat offSetY = pointY - _startOffsetY;
-    if (offSetX == 0 && offSetY == 0) {
+    if ((offSetX == 0 && offSetY == 0) || (offSetX < 5 && offSetY < 5)) {
         return;
     }
     if (gestureType == -1) { //未判定手势类型前

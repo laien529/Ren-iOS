@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)more;
+- (void)cast;
 
 - (void)seekForward:(NSInteger)duration;
 - (void)seekBackward:(NSInteger)duration;

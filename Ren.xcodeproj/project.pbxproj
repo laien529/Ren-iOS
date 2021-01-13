@@ -65,6 +65,7 @@
 		48A62C1F258C4047003828F5 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4814A93325885B52007D4136 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48A62C27258C9BA5003828F5 /* RenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A62C26258C9BA5003828F5 /* RenTableViewCell.m */; };
 		48AE6A6625807E410033FBF1 /* RenTabBarItemConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */; };
+		48C774882599862600766009 /* CastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C774872599862600766009 /* CastViewController.m */; };
 		48CBF2A625806FF800612080 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2A525806FF800612080 /* AppDelegate.m */; };
 		48CBF2AC25806FF800612080 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF2AB25806FF800612080 /* ViewController.m */; };
 		48CBF2AF25806FF800612080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CBF2AD25806FF800612080 /* Main.storyboard */; };
@@ -323,6 +324,8 @@
 		48A62C26258C9BA5003828F5 /* RenTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTableViewCell.m; sourceTree = "<group>"; };
 		48AE6A6425807E410033FBF1 /* RenTabBarItemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenTabBarItemConfig.h; sourceTree = "<group>"; };
 		48AE6A6525807E410033FBF1 /* RenTabBarItemConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenTabBarItemConfig.m; sourceTree = "<group>"; };
+		48C774862599862600766009 /* CastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CastViewController.h; sourceTree = "<group>"; };
+		48C774872599862600766009 /* CastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CastViewController.m; sourceTree = "<group>"; };
 		48CBF2A125806FF800612080 /* Ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CBF2A425806FF800612080 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48CBF2A525806FF800612080 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -942,6 +945,7 @@
 		48540AD62592F1AD00FF935A /* VOD */ = {
 			isa = PBXGroup;
 			children = (
+				48C774852599860800766009 /* cast */,
 				48540AE32592F31400FF935A /* PlayerControlLayerProtocol.h */,
 				48540AEB2592F60900FF935A /* VODBarrageView.h */,
 				48540AEC2592F60900FF935A /* VODBarrageView.m */,
@@ -972,6 +976,15 @@
 				B06CB0BD2589E87E0085F586 /* HorizontalSTD.m */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		48C774852599860800766009 /* cast */ = {
+			isa = PBXGroup;
+			children = (
+				48C774862599862600766009 /* CastViewController.h */,
+				48C774872599862600766009 /* CastViewController.m */,
+			);
+			path = cast;
 			sourceTree = "<group>";
 		};
 		48CBF29825806FF800612080 = {
@@ -1606,6 +1619,7 @@
 				4814A8A925836C0F007D4136 /* UGCViewController.m in Sources */,
 				4814A8F825870DA2007D4136 /* UIRefreshControl+AFNetworking.m in Sources */,
 				48DD136C2589FB8A0000FC2D /* ViewController+MASAdditions.m in Sources */,
+				48C774882599862600766009 /* CastViewController.m in Sources */,
 				48DD136B2589FB8A0000FC2D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				4814A9F52588C82E007D4136 /* FMDatabaseAdditions.m in Sources */,
 				4814AA542589A6CC007D4136 /* FeedDataModel.m in Sources */,

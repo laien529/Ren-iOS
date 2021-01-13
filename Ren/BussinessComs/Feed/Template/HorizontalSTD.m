@@ -79,7 +79,7 @@ static const float totalHeight = 250;
     if (!url) {
         url = [NSURL URLWithString:data.imgHVUrl];
     }
-    [_coverImageView setImageWithURL:url placeholder:nil];
+//    [_coverImageView setImageWithURL:url placeholder:nil];
     
     self.block = ^(ModuleData*  _Nonnull dt) {
         NSLog(dt.name);

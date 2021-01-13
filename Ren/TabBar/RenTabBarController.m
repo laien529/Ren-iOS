@@ -24,6 +24,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    effectView.frame = CGRectMake(0, (CGRectGetHeight(self.view.frame) - tabBarHeight), kRenScreenWidth, tabBarHeight);
+    [self.view addSubview:effectView];
     NSInteger idx = 0;
     NSInteger count = [self tabBarConfigArray].count;
     CGFloat width = kScreenWidth / count;
@@ -39,6 +43,7 @@
         [tabBarItemArray addObject:item];
         idx++;
     }
+   
 }
 
 - (NSArray*)tabBarConfigArray {
