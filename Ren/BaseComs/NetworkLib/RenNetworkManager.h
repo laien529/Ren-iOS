@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
           successBlock:(void (^)(NSURLResponse *response, id responseObject, NSInteger retryTimes)) successBlock
            failedBlock:(void (^)(NSError* error, NSURLResponse *response, NSInteger retryTimes)) failedBlock;
 
-- (void)requesImagetWithURL:(NSString*)url
+- (void)requestImagetWithURL:(NSString*)url
                 METHOD:(NSString*)method
                   paramters:(nullable NSDictionary*)paramters
           successBlock:(void (^)(NSURLResponse *response, id responseObject, NSInteger retryTimes)) successBlock
