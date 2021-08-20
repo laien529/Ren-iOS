@@ -23,12 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    CGFloat top =  self.topLayoutGuide.length;
-    if (@available(iOS 11.0, *)) {
-        CGFloat safeTop = self.view.safeAreaLayoutGuide.layoutFrame.origin.y;
-    } else {
-        // Fallback on earlier versions
-    }
+
     [self.navigationController setNavigationBarHidden:YES];
     RenScaffold *scraffold = [[RenScaffold alloc] init];
     [scraffold setNavigationBar:[[RenNavigationBar alloc] init]];    

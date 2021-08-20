@@ -1,2 +1,4 @@
+github "AFNetworking/AFNetworking" "4.0.1"
 github "airbnb/lottie-ios" "2.5.3"
 github "ccgus/fmdb" "2.7"
+github "ibireme/YYKit" "1.0.9"

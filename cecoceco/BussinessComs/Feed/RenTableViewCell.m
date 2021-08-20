@@ -21,11 +21,11 @@
     // Configure the view for the selected state
 }
 - (void)setData:(id)data cellType:(nonnull NSString *)cellType {
-    id<RenTableViewCellProtocol> cellContentView = [FeedFlowCellFactory getCellByType:cellType];
-    [cellContentView setData:data cellType:cellType];
-    self.block = cellContentView.block;
-    self.cellHeight = cellContentView.cellHeight;
-    [self.contentView addSubview:(UIView*)cellContentView];
+//    id<RenTableViewCellProtocol> cellContentView = [FeedFlowCellFactory getCellByType:cellType];
+//    [cellContentView setData:data cellType:cellType];
+//    self.block = cellContentView.block;
+//    self.cellHeight = cellContentView.cellHeight;
+//    [self.contentView addSubview:(UIView*)cellContentView];
 
 }
 
